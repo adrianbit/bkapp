@@ -11,7 +11,7 @@ $.fn.extend({
     }
 });
 
-function gotoMenu(view){
+function goto(view){
     app.mobileApp.navigate(view);
 }
 

@@ -9,5 +9,8 @@
   },
   "otraview": {
     "title": "OTRA View"
+  },
+  "loginView": {
+    "title": "Login View"
   }
 }

@@ -82,12 +82,16 @@ body{
 	height: 50%;
 }
 
-.panama img:nth-child(1){
+.panama .back{
 	height: auto;
     width: 10%;
     float: right;
     margin-top: 3%;
     margin-right: 5%;
+}
+
+.bienvenida{
+    margin-bottom:20px;
 }
 
 .bienvenida h1{
@@ -96,27 +100,20 @@ body{
 	color: whitesmoke;
 	z-index: 100;
 	margin: 0 !important;
-	padding-top: 15%;
-
+	padding-top: 3%;
 }
 
 
 .profile{
-	margin:auto;
-	margin-top: 10%;
-	width: 30%;
-	height: auto;
-	position: absolute;
 	border-radius: 50%;
-	margin-left:35%;
+    max-height: 150px;
+    max-width: 150px;
 }
 
 .nombre_usuario {
-	font-size: 1.2em;
-	color: whitesmoke;
-	text-align: center;
-	margin-top:55%;
-	margin-bottom: 10%;
+	font-size: 1.2em !important;
+	color: whitesmoke !important;
+	text-align: center !important;
 	
 }
 
@@ -131,14 +128,13 @@ body{
 	height: 3%;
 	border: #272323 solid;
 	border-radius: 25px;
-	margin: 10% 25% 20% 25%
+    padding: 1px 15px;
+    color: #333;
 }
 
-.botonPerfil p{
-	text-align: center;
-	margin: 0 !important;
+.botonPerfil:hover{
+	color: #888;
 }
-
 
 div{
 	display: block;
