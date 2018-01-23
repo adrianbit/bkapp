@@ -9,12 +9,13 @@
     <!-- START_CUSTOM_CODE_home -->
     <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
         <div class="grid insideGrid" id="homeGrid">
-            <iframe id="video-background" src="images/bg.mp4" frameborder="0" allowfullscreen style="width:1px;height:1px;"></iframe>
+            <!--<iframe id="video-background" src="images/bg.mp4" frameborder="0" allowfullscreen style="width:1px;height:1px;"></iframe>-->
             <!--<div class="col-xs-12 tac"><img class="logoStGeorge" src="images/logos/Logo_color.png" atl="Logo St. George"/></div>-->
 
-            <!--<video autoplay id="video-background">
-                <source src="images/bg.mp4" type="video/mp4" />
-            </video>-->
+            <video autoplay id="video-background"> 
+                <source src=images/bg.mp4 type=video/mp4>
+                <!--<source src=http://techslides.com/demos/sample-videos/small.mp4 type=video/mp4>-->
+            </video>
 
             <div class="col-xs-12 tac" id="formUser" style="display:none;">
                 <img class="user" src="images/login/profile.png" width="128" height="128"/>

@@ -1,0 +1,70 @@
+<div style="position:fixed;overflow-x:hidden;" data-role="view" data-title="View" data-layout="main-nonav" data-model="app.menuView" data-show="app.menuView.onShow" data-after-show="app.menuView.afterShow" id="menuViewScreen" class="screen">
+    <header data-role="header" style="display:none;">
+        <div data-role="navbar" class="header-text insideHeader" style="background-image:linear-gradient(to right, rgb(246, 163, 38) 0%, rgb(246, 163, 38) 100%);">
+            <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button" onclick="overlayMenu('homeScreen');"></a>
+        </div>
+    </header>
+
+    <!-- START_CUSTOM_CODE_menuView -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+        <div class="grid insideGrid" style="background-color:#efefef;">
+
+            <div class="row" style="margin-top:20px;">
+                <div class="col-xs-2 tal">
+                    <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button">
+                        <img class="menuHamburgesa" src="images/menu/icono_hamburguesa.png" width="30" height="30" alt="" />
+                    </a>
+                </div>
+                <div class="col-xs-10 tac">
+                    <img class="logoStGeorgeMenu" src="images/logos/Logo_color.png" alt="Logo St. George"/>
+                </div>
+            </div>
+
+            <div class="col-xs-12 tac" style="margin-top:20px;">
+                <h2 class="nombreCliente">Rafael López Pérez</h2>
+                <h3><span style="color:#4e4e4e;">Balance</span><span style="color:#006838;"> $30,000</span></h3>
+            </div>
+
+            <div id="balance">
+                <img src="images/menu/balance.png" width="406" height="162" alt="" />
+            </div>
+
+            <div id="menuPrincipal">
+                <div class="row">
+                    <div class="col-xs-6 tac">
+                        <div>
+                        <img src="images/menu/icono_cuenta.png" class="imageMenu" />
+                        </div>
+                    </div>
+                    <div class="col-xs-6 tac">
+                        <img src="images/menu/icono_tarjeta.png" class="imageMenu" />
+                    </div>
+                </div>
+                <div class="row" style="margin-top:10px;">
+                    <div class="col-xs-6 tac">
+                        <span class="textMenu">Cuentas</span>
+                    </div>
+                    <div class="col-xs-6 tac">
+                        <span class="textMenu">Tarjetas</span>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:30px;">
+                    <div class="col-xs-6 tac">
+                        <img src="images/menu/icono_pagar.png" class="imageMenu" />
+                    </div>
+                    <div class="col-xs-6 tac">
+                        <img src="images/menu/icono_transferir.png" class="imageMenu" />
+                    </div>
+                    <div class="row" style="margin-top:10px;">
+                        <div class="col-xs-6 tac">
+                            <span class="textMenu">Pagos</span>
+                        </div>
+                        <div class="col-xs-6 tac">
+                            <span class="textMenu">Transferencias</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- END_CUSTOM_CODE_menuView -->
+</div>

@@ -12,7 +12,11 @@ app.localization.registerView('loginView');
 function cssLogin(){
     var wh = $(window).height()+1;
     var ww = $(window).width()+1;
-    $(".botonIngresar").css({'bottom':('-'+(wh+20)+'px')});
+
+    if (deviceType=="iPad"||deviceType=="iPhone")
+        $(".botonIngresar").css({'bottom':('-'+(wh+20)+'px')});
+    else
+        $(".botonIngresar").css({'bottom':'-20px'});
 }
 
 function animateLogin(){

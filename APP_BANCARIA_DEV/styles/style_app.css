@@ -20,6 +20,16 @@ body{
 	height: auto;
 	margin-top: 10%;
 }
+
+.menuHamburgesa:hover{
+    -webkit-filter: brightness(120%); /* Safari */
+    filter: brightness(120%);
+}
+
+.km-button{
+    border:none !important;
+}
+
 #usuario{
 	background-color:transparent;
 	border-bottom: solid #fff 3px;
@@ -154,16 +164,27 @@ div{
 /*MENU PRINCIPAL*/
 
 .logoStGeorgeMenu{
-	width: 80%;
+	width: 100%;
 	height: auto;
 	margin-top: 5%;
 }
 
 .nombreCliente{
-	font-size: 1.7em;
-	color: #61BF1A;
-	text-align: center;
-	margin-top: 10%;
+	font-size: 1.5em !important;
+    font-weight:bold !important;
+	color: #006838 !important;
+	text-align: center !important;
+}
+
+.imageMenu{
+    background-color: #fff;
+    border-radius: 10%;
+    padding: 10px;
+    width: 60%;
+}
+
+.textMenu{
+
 }
 
 #balance img{
@@ -199,6 +220,7 @@ div{
 	width: 100%;
 	height: auto; 
 	margin: auto;
+    margin-top:30px;
 }
 
 /*MENU TARJETAS*/

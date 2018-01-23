@@ -1,8 +1,15 @@
 'use strict';
 
 app.home = kendo.observable({
-    onShow: function() { css();  },
-    afterShow: function() { goto('components/loginView/view.html'); setTimeout(function(){ animate(); }, 2700); }
+    onShow: function() {
+        goto("components/loginView/view.html");
+        css(); 
+        var video = document.getElementById("video-background");
+        video.play();
+    },
+    afterShow: function() { 
+        setTimeout(function(){ animate(); }, 2700);
+    }
 });
 app.localization.registerView('home');
 

@@ -12,5 +12,8 @@
   },
   "loginView": {
     "title": "Login View"
+  },
+  "menuView": {
+    "title": "Menu View"
   }
 }

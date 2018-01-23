@@ -23,6 +23,13 @@
       "components": [],
       "title": "Login View",
       "addToNavigation": false
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "menuView",
+      "components": [],
+      "title": "Menu View",
+      "addToNavigation": false
     }
   ],
   "dataProviders": [],
