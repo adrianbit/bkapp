@@ -8,14 +8,20 @@
       "title": "Home View",
       "addToNavigation": true,
       "icon": "home"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "otraview",
+      "components": [],
+      "title": "OTRA View",
+      "addToNavigation": true,
+      "icon": "home"
     }
   ],
   "dataProviders": [],
   "name": "kendoUiMobileApp",
-  "navigation": "tabstrip",
+  "navigation": "drawer",
   "view": "home",
-  "transition": "slide",
-  "showMoreTab": true,
   "skin": "nova",
   "skinMainColor": "#32364c",
   "skinTextColor": "#ffffff",

@@ -2,7 +2,7 @@
   "ProjectName": "APP_BANCARIA_DEV",
   "ProjectGuid": "986974ff-f301-475f-96f8-b2f0d5eae010",
   "projectVersion": 1,
-  "AppIdentifier": "com.telerik.APPBANCARIADEV",
+  "AppIdentifier": "com.app.stgeorgesbank",
   "DisplayName": "APP_BANCARIA_DEV",
   "Author": "",
   "Description": "APP_BANCARIA_DEV",

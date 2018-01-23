@@ -1,0 +1,497 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	font-family:Calibri, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+body{
+	background-color: #edebed;
+}
+
+#homeGrid{
+    height:-webkit-fill-available;
+    min-height:670px;
+    background-image:linear-gradient(to right, rgb(0,0,0) 0%, rgb(0,0,0) 100%);
+    background-color: black;
+}
+
+.logoStGeorge{
+	width:70%;
+	height: auto;
+	margin-top: 10%;
+}
+#usuario{
+	background-color:transparent;
+	border-bottom: solid #fff 3px;
+	width: 75%;
+	color: white;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	margin-top: 60%;
+    margin-left: 10px;
+    -webkit-animation-duration: 7s;
+    -moz-animation-duration: 7s;
+    -ms-input--animation-duration: 7s;
+    font-size: 1.5em;
+}
+
+
+ #usuario::placeholder{
+	color:rgba(84,90,83,0.82);
+}
+
+.user{
+	width: 10%;
+	height: auto;
+}
+
+#botonIngresar{
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -ms-input--animation-duration: 3s;
+}
+
+.botonIngresar{
+	width: 100%;
+	height: 80px;
+	/**background-color: #00693E;*/
+    background-color: rgba(0, 105, 62, 0.95);
+	position: absolute; 
+	bottom:0px;
+    font-display: center;
+}
+
+.botonIngresar h1{
+	text-align: center;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+	color: whitesmoke;
+    line-height: 30px;
+    font-family: inherit;
+    font-size: 2.2em;
+    font-weight:bold;
+}
+
+
+/*PERFIL AUTENTICAR*/
+
+.panama{
+	background-color: seagreen;
+	width: 100%;
+	height: 50%;
+}
+
+.panama img:nth-child(1){
+	height: auto;
+    width: 10%;
+    float: right;
+    margin-top: 3%;
+    margin-right: 5%;
+}
+
+.bienvenida h1{
+	font-size: 2em;
+	text-align: center;
+	color: whitesmoke;
+	z-index: 100;
+	margin: 0 !important;
+	padding-top: 15%;
+
+}
+
+
+.profile{
+	margin:auto;
+	margin-top: 10%;
+	width: 30%;
+	height: auto;
+	position: absolute;
+	border-radius: 50%;
+	margin-left:35%;
+}
+
+.nombre_usuario {
+	font-size: 1.2em;
+	color: whitesmoke;
+	text-align: center;
+	margin-top:55%;
+	margin-bottom: 10%;
+	
+}
+
+.password{
+	display: block;
+
+}
+
+
+.botonPerfil{
+	width: 50%;
+	height: 3%;
+	border: #272323 solid;
+	border-radius: 25px;
+	margin: 10% 25% 20% 25%
+}
+
+.botonPerfil p{
+	text-align: center;
+	margin: 0 !important;
+}
+
+
+div{
+	display: block;
+}
+
+
+#password{
+	background-color:transparent;
+	border-bottom: solid #00693E 3px;
+	width: 75%;
+	color: darkslategray;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+}
+
+/*MENU PRINCIPAL*/
+
+.logoStGeorgeMenu{
+	width: 80%;
+	height: auto;
+	margin-top: 5%;
+}
+
+.nombreCliente{
+	font-size: 1.7em;
+	color: #61BF1A;
+	text-align: center;
+	margin-top: 10%;
+}
+
+#balance img{
+	margin: auto;
+	width: 100%;
+	height: auto;
+}
+
+.menuPrincipal{
+	padding: 0 !important;
+}
+
+.menuPrincipal li{
+	list-style: none;
+	width: 80%;
+	height: 80%;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 3px 3px 10px 4px lightgray;
+	color: #006338;
+	margin: auto;
+	margin-bottom: 15%; 
+	margin-top: 15%;
+	padding-bottom: 5%;
+}
+
+.menuPrincipal img{
+	width: 80%;
+	height: auto; 
+}
+
+#menuPrincipal{
+	width: 100%;
+	height: auto; 
+	margin: auto;
+}
+
+/*MENU TARJETAS*/
+
+
+.menuTarjetas{
+	padding: 0 !important;
+}
+
+.menuTarjetas li{
+	list-style: none;
+	width: 80%;
+	height: 50px;
+	background-color: rgba(97,191,26,0.70);
+	border-radius: 20px;
+	box-shadow: 3px 3px 10px 4px lightgray;
+	color: white;
+	margin: auto;
+	margin-bottom: 10%; 
+	margin-top: 15%;
+}
+
+.menuTarjetas li p{
+	padding-top:5%;
+	font-size: 1.2em;
+}
+
+.menuTarjetas img{
+	float: left;
+    border-radius: 20px;
+    height: auto; 
+}
+
+#menuTarjetas{
+	width: 100%;
+	height: auto; 
+	margin: auto;
+}
+
+
+/*DETALLES*/
+
+.detalles{
+	width: 100%;
+	height: auto; 
+}
+
+.detalles img{
+	width: 100%;
+	height: auto;
+	padding-bottom: 5%;
+}
+
+.movimientosBancarios{
+	width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgba(73,67,68,1.00);
+    color: whitesmoke;
+    text-align: center;
+    align-content: center;
+	display: block;
+	position: relative;
+	box-shadow: 0px 4px 10px 4px lightgray;
+	z-index: 2;
+}
+
+.tiempos{
+	margin-top: 5%;
+	font-weight: 300;
+	display: inline-block;
+}
+
+#movimientos{
+	font-size: 1.4em;
+	margin-top: 15%;
+	font-weight: 300;
+}
+
+
+.detalleTarjetas{
+	padding: 0 !important;
+}
+
+.detalleTarjetas li{
+	list-style: none;
+	width: 80%;
+	height: 50px;
+	background-color: rgba(97,191,26,0.70);
+	border-radius: 20px;
+	box-shadow: 3px 3px 10px 4px lightgray;
+	color: white;
+	margin: auto; 
+	margin-top:5%;
+}
+
+.detalleTarjetas li p{
+	padding-top:5%;
+	font-size: 1.2em;
+}
+
+.detalleTarjetas img{
+	float: left;
+    border-radius: 20px;
+    height: auto; 
+}
+
+#detalleTarjetas{
+	width: 100%;
+	height: auto; 
+	margin: auto;
+}
+
+.compras{
+	width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: white;
+    color: rgba(47,47,47,1.00);
+    text-align: center;
+    align-content: center;
+	display: block;
+	font-size: .9em;
+	box-shadow: 0px 6px 10px 4px lightgray;
+	z-index:2;
+}
+
+.tiempos p{
+	margin: 8% 0%;
+}
+
+.selector{
+	width: 70%;
+    height: 100%;
+    position: absolute;
+    border: solid 1.5px rgba(97,191,26,1);
+    border-radius: 20px;
+    margin: auto;
+}
+
+#rectanguloUno{
+	margin: 0% 10%;
+	margin-top: -3%;
+	width: 80%;
+	height: 200px;
+	background-color: rgba(116,187,32,0.36);
+}
+
+#rectanguloDos{
+	margin: 0% 15%;
+    margin-top: -52%;
+    z-index: 1;
+    width: 70%;
+    height: 200px;
+    background-color: rgba(116,187,32,0.18);
+    position: absolute;
+}
+
+#boton_ampliar{
+	width: 20%;
+    height: 50%;
+    background-color: #006338;
+    position: absolute;
+    z-index: 5;
+    border-radius: 50%;
+    margin-top: 30%;
+    margin-left: 36%;
+	color:whitesmoke;
+	font-size: 3.8em;
+	text-align: center;
+	box-shadow: 3px 3px 10px 4px lightgray;
+}
+
+/*FORMULARIO TRANSFERENCIA*/
+
+.formulario{
+	padding-bottom: 3%;
+    border-bottom: thin solid lightgray;
+    color: #006338;
+    margin-top: 3%;
+    font-size: 1.2em;
+    font-weight: 300;
+    padding-top: 3%;
+}
+
+.formulario:last-child{
+	padding-bottom: 3%;
+    border-bottom: thin solid transparent;
+    color: #006338;
+    margin-top: 3%;
+    font-size: 1.2em;
+    font-weight: 300;
+    padding-top: 3%;
+}
+
+.nombreSeleccion{
+	font-size: 1.7em;
+    color: #61BF1A;
+    text-align: center;
+    margin-top: 8%;
+    font-weight: 300;
+}
+
+.principal img{
+	width: 25%;
+	height: auto;
+	margin: 0% 37.5%;
+}
+
+.seleccionCuentas{
+	text-align: left;
+	font-weight: 200;
+}
+
+.alineacion{
+	text-align: right;
+}
+
+.formulario select{
+	background-color: white;
+    border-radius: 10px;
+    border: transparent 1px solid;
+}
+
+.importe{
+	text-align: center;
+	background-color: white;
+    border-radius: 10px;
+    border: transparent 1px solid;
+}
+
+.importe::placeholder{
+	color: dimgray;
+	font-style: italic;
+	font-size:.8em;
+}
+
+.fecha{
+	font-size: 1.3em;
+	margin-top:0;
+}
+
+.fechayhora{
+	text-align: center;
+	background-color: white;
+    border-radius: 10px;
+    border: transparent 1px solid;
+}
+
+.botones{
+	border-radius: 20px;
+    border: 2px solid;
+    background-color: white;
+    font-weight: 600;
+}
+
+.recibo{
+	width: 80%;
+	text-align: center;
+	background-color: white;
+    border-radius: 10px;
+    border: transparent 1px solid;
+}
+
+.recibo::placeholder{
+	color: dimgray;
+	font-style: italic;
+	font-size:.8em;
+}
+
+.link{
+	display: block;
+	font-size:.8em;
+	margin: 5% 0%;
+}
+
+#usuario::-webkit-input-placeholder {
+  color: white;
+}
+#usuario::-moz-placeholder {
+  color: white;
+}
+#usuario:-ms-input-placeholder {
+  color: white;
+}
+#usuario:-moz-placeholder {
+  color: white;
+}

@@ -6,5 +6,8 @@
   },
   "home": {
     "title": "Home View"
+  },
+  "otraview": {
+    "title": "OTRA View"
   }
 }
