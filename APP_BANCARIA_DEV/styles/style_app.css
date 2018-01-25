@@ -5,7 +5,7 @@
 }
 
 body{
-	background-color: #edebed;
+	background-color: rgba(255,255,255,0.05);
 }
 
 #homeGrid{
@@ -13,6 +13,18 @@ body{
     min-height:670px;
     background-image:linear-gradient(to right, rgb(0,0,0) 0%, rgb(0,0,0) 100%);
     background-color: black;
+}
+
+#menuGrid{
+    background-color: rgba(255,255,255,0.05);
+    margin-top: -20px;
+    padding-top: 20px;
+}
+
+#cuentaGrid{
+    background-color: rgba(255,255,255,0.1);
+    margin-top: -20px;
+    padding-top: 20px;
 }
 
 .logoStGeorge{
@@ -79,7 +91,7 @@ body{
 	color: whitesmoke;
     line-height: 30px;
     font-family: inherit;
-    font-size: 2.2em;
+    font-size: 1.8em;
     font-weight:bold;
 }
 
@@ -180,7 +192,13 @@ div{
     background-color: #fff;
     border-radius: 10%;
     padding: 10px;
-    width: 60%;
+    width: 90%;
+    cursor: pointer;
+}
+
+.imageMenu:hover{
+    -webkit-filter: brightness(105%); /* Safari */
+    filter: brightness(105%);
 }
 
 .textMenu{
@@ -220,7 +238,9 @@ div{
 	width: 100%;
 	height: auto; 
 	margin: auto;
-    margin-top:30px;
+    margin-top:0px;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 20px 0px;
 }
 
 /*MENU TARJETAS*/
@@ -280,6 +300,7 @@ div{
     margin: 0 auto;
     margin-left: 5%;
     margin-right: 5%;
+    padding-top: 2%;
     background-color: rgba(73,67,68,1.00);
     color: whitesmoke;
     text-align: center;
@@ -294,14 +315,31 @@ div{
 	margin-top: 5%;
 	font-weight: 300;
 	display: inline-block;
+    cursor:pointer;
+    padding: 2px 15px;
+}
+
+.tiempos.active{
+	border: solid 1.5px rgba(97,191,26,1);
+    border-radius: 20px;
+}
+
+.tiempos:hover{
+    border: solid 1.5px rgba(97,191,26,1);
+    border-radius: 20px;
 }
 
 #movimientos{
 	font-size: 1.4em;
 	margin-top: 15%;
 	font-weight: 300;
+    color:white;
 }
 
+.cuentaRow{
+    border-bottom: 1px solid #c1c1c1;
+    padding-bottom: 10px;
+}
 
 .detalleTarjetas{
 	padding: 0 !important;
@@ -309,24 +347,30 @@ div{
 
 .detalleTarjetas li{
 	list-style: none;
-	width: 80%;
+	width: 90%;
 	height: 50px;
-	background-color: rgba(97,191,26,0.70);
-	border-radius: 20px;
+	background-color: rgba(0,0,0,0.07);
+	border-radius: 5px;
 	box-shadow: 3px 3px 10px 4px lightgray;
-	color: white;
 	margin: auto; 
 	margin-top:5%;
+    cursor:pointer;
 }
 
-.detalleTarjetas li p{
-	padding-top:5%;
+.detalleTarjetas li:hover{
+    background-color: rgba(97,191,26,0.70);
+    color: white;
+}
+
+.detalleTarjetas li span{
+	line-height: 50px;
 	font-size: 1.2em;
+    font-weight:bold;
 }
 
 .detalleTarjetas img{
 	float: left;
-    border-radius: 20px;
+    border-radius:5px;
     height: auto; 
 }
 
@@ -342,6 +386,8 @@ div{
     margin: 0 auto;
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 30px;
+    padding: 20px 0px;
     background-color: white;
     color: rgba(47,47,47,1.00);
     text-align: center;
@@ -350,6 +396,10 @@ div{
 	font-size: .9em;
 	box-shadow: 0px 6px 10px 4px lightgray;
 	z-index:2;
+}
+
+.compras p{
+    font-size:1.2em;
 }
 
 .tiempos p{
@@ -385,7 +435,7 @@ div{
 
 #boton_ampliar{
 	width: 20%;
-    height: 50%;
+    height: 40%;
     background-color: #006338;
     position: absolute;
     z-index: 5;
@@ -393,9 +443,14 @@ div{
     margin-top: 30%;
     margin-left: 36%;
 	color:whitesmoke;
-	font-size: 3.8em;
+	font-size: 3.5em;
 	text-align: center;
 	box-shadow: 3px 3px 10px 4px lightgray;
+    cursor:pointer;
+}
+
+#boton_ampliar:hover{
+    background-color: #74bb20;
 }
 
 /*FORMULARIO TRANSFERENCIA*/
@@ -512,4 +567,60 @@ div{
 }
 #usuario:-moz-placeholder {
   color: white;
+}
+
+/*menu hamburguesa*/
+.hamburguesaTop{
+
+	width: 100%;
+	height: 50%;
+}
+
+.hamburguesaTop img:nth-child(1){
+	height: auto;
+    width: 10%;
+    float: right;
+    margin-top: 3%;
+    margin-right: 5%;
+}
+
+.menuH img{
+	width: 15% !important;
+	height: auto;
+	display: inline-block;
+}
+
+
+.menuH h1{
+	margin-left: 10% !important;
+    font-size: 1.3em;
+    color: #006338;
+    display: inline-block;
+}
+
+.menuH h1:hover{
+    color: #7ab63a;
+}
+
+.menuH ul{
+	list-style: none;
+	display: block;
+	padding: 0;
+}
+
+.menuH li{
+    width: 100%;
+    height: auto; 
+	vertical-align: middle;
+    margin: 5% 0%;
+}
+
+.menuH{
+	width: 95%;
+	border-bottom: 2px dashed rgba(0,0,0,0.20);
+    padding: 10px 15px;
+}
+
+.menuH:last-child{
+	border-bottom: transparent solid 2px; 
 }

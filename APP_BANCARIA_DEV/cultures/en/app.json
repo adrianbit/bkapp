@@ -15,5 +15,8 @@
   },
   "menuView": {
     "title": "Menu View"
+  },
+  "cuentasView": {
+    "title": "Cuentas View"
   }
 }

@@ -31,11 +31,15 @@
 }
 
 .km-nova .km-drawer .km-content{
-    background-image:linear-gradient(to right, #f6a426 0%, #ff8a00 100%) !important;
+    background-image:linear-gradient(to right, #ffffff 0%, #ffffff 100%) !important
 }
 
 .km-button .km-icon, .km-detail .km-icon, .km-ios .km-button .km-icon, .km-list .km-icon{
     font-size:1.6em;
+}
+
+.km-nova #navigation-container .active, .km-nova .km-drawer .km-listview li.km-state-active {
+    background:rgba(0,0,0,0);
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */

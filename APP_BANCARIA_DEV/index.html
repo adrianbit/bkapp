@@ -24,6 +24,7 @@
 </head>
 
 <body id="kendoUiMobileApp">
+    <script src="components/cuentasView/index.js"></script>
     <script src="components/menuView/index.js"></script>
     <script src="components/loginView/index.js"></script>
     <script src="components/otraview/index.js"></script>
@@ -45,16 +46,30 @@
         </header>
     </div>
 
-    <div id="appDrawer" data-role="drawer" data-title="Navigation">
-        <header data-role="header">
-            <div data-role="navbar">
-                <span data-role="view-title"></span>
-            </div>
-        </header>
+    <div id="appDrawer" data-role="drawer" data-title="">
+
         <ul id="navigation-container" data-role="listview">
-            <li><a href="components/home/view.html" data-icon="home"><span class="navigation-link-text" data-bind="text: strings.home.title"></span></a></li>
-            <li><a href="components/otraview/view.html" data-icon="home"><span class="navigation-link-text" data-bind="text: strings.otraview.title"></span></a></li>
-            <li><a href="components/otraview/view.html" data-icon="home"><span class="navigation-link-text" data-bind="text: strings.otraview.title"></span></a></li>
+            <div class="col-xs-12 menuH">
+                <li><a href="components/home/view.html"><img src="images/icons/icono_sucursales.png" /><span class="navigation-link-text"><h1>Sucursales</h1></span></a></li>
+                <li><a href="components/otraview/view.html"><img src="images/icons/icono_servicios.png" /><span class="navigation-link-text"><h1>Servicios</h1></span></a></li>
+                <li><a href="components/otraview/view.html"><img src="images/icons/icono_promociones.png" /><span class="navigation-link-text"><h1>Promociones</h1></span></a></li>
+            </div>
+
+            <div class="col-xs-12 menuH">
+                <li><a href="components/home/view.html"><img src="images/icons/icono_config.png" /><span class="navigation-link-text"><h1>Configuración</h1></span></a></li>
+                <li><a href="components/otraview/view.html"><img src="images/icons/icono_ayuda.png" /><span class="navigation-link-text"><h1>Ayuda</h1></span></a></li>
+                <li><a href="components/otraview/view.html"><img src="images/icons/icono_contacto.png" /><span class="navigation-link-text"><h1>Contacto</h1></span></a></li>
+                <li><a href="components/otraview/view.html"><img src="images/icons/icono_telefono.png" /><span class="navigation-link-text"><h1>No.de Emergencias</h1></span></a></li>
+            </div>
+
+            <div class="col-xs-12 menuH">
+                <li><a href="components/home/view.html"><img src="images/icons/icono_legal.png" /><span class="navigation-link-text"><h1>Aviso Legal</h1></span></a></li>
+                <li><a href="components/otraview/view.html"><img src="images/icons/icono_privacidad.png" /><span class="navigation-link-text"><h1>Aviso de Privacidad</h1></span></a></li>
+            </div>
+
+            <div class="col-xs-12 menuH">
+                <li><a href="components/otraview/view.html"><img src="images/icons/icono_logout.png" /><span class="navigation-link-text"><h1>Cerrar sesión</h1></span></a></li>
+            </div>
         </ul>
     </div>
     <div id="notify" class="notify-pop-up">

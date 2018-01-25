@@ -13,8 +13,23 @@ $.fn.extend({
     }
 });
 
+$.fn.extend({
+    hideShow: function (pre,post) {
+        if (this.css("display") == "none") {
+            $(this).show();
+        } else {
+            $(this).hide();
+        }
+        return this;
+    }
+});
+
 function goto(view){
     app.mobileApp.navigate(view);
+}
+
+function gotoMenu(){
+    app.mobileApp.navigate("components/menuView/view.html");
 }
 
 function inspect(obj) {

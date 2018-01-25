@@ -1,0 +1,165 @@
+<div data-role="view" data-title="View" data-layout="main-nonav" data-model="app.cuentasView" data-show="app.cuentasView.onShow" data-after-show="app.cuentasView.afterShow" id="cuentasViewScreen" class="screen">
+    <header data-role="header" style="display:none;">
+        <div data-role="navbar" class="header-text insideHeader" style="background-image:linear-gradient(to right, rgb(246, 163, 38) 0%, rgb(246, 163, 38) 100%);">
+            <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button" onclick="overlayMenu('homeScreen');"></a>
+        </div>
+    </header>
+
+    <!-- START_CUSTOM_CODE_cuentasView -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+        <div class="grid insideGrid" id="cuentasGrid">
+
+            <div class="row" style="margin-top:20px;">
+                <div class="col-xs-2 tal">
+                    <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button">
+                        <img class="menuHamburgesa" src="images/menu/icono_hamburguesa.png" width="30" height="30" alt="" />
+                    </a>
+                </div>
+                <div class="col-xs-10 tac">
+                    <img class="logoStGeorgeMenu" src="images/logos/Logo_color.png" alt="Logo St. George" onclick="gotoMenu();"/>
+                </div>
+            </div>
+
+            <div id="detalleTarjetas" style="margin-top:20px;">
+
+                <div class="row cuentaRow">
+                    <div class="col-xs-12 tac" onclick="showDetail('dt1');" id="cuentaRowdt1">
+                        <ul class="detalleTarjetas">
+                            <li><img src="images/icons/mastercard.png" width="100" height="50" alt="" />
+                                <span>1234 **** **** **89</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="detalleTarjeta" id="dt1" style="display:none;">
+                        <div class="col-xs-12 detalles">
+                            <img src="images/otros/balance_tarjeta.png" width="385" height="186" alt="" />
+                        </div>
+
+                        <div class="movimientosBancarios col-xs-12">
+
+                            <div class="col-xs-4"><div class="tiempos">DIC</div></div>
+                            <div class="col-xs-4"><div class="tiempos active">MES</div></div>
+                            <div class="col-xs-4"><div class="tiempos">SEMANA</div></div>
+
+                            <h1 id="movimientos">Movimientos</h1>
+
+                        </div>
+
+                        <div class="compras col-xs-12">
+
+                            <div id="boton_ampliar">+</div>
+
+                            <div class="col-xs-6">
+                                <p>Apple Store</p>
+                                <p>Restaurante</p>
+                                <p>Pago de servicios</p>
+                                <p>Librería</p>
+
+                            </div>
+
+                            <div class="col-xs-6">
+                                <p>$400.00</p>
+                                <p>$155.00</p>
+                                <p>$256.87</p>
+                                <p>$302.76</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row cuentaRow">
+                    <div class="col-xs-12 tac">
+                        <ul class="detalleTarjetas" onclick="showDetail('dt2');" id="cuentaRowdt2">
+                            <li><img src="images/icons/mastercard.png" width="100" height="50" alt="" />
+                                <span>9235 **** **** **14</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="detalleTarjeta" id="dt2" style="display:none;">
+                        <div class="col-xs-12 detalles">
+                            <img src="images/otros/balance_tarjeta.png" width="385" height="186" alt="" />
+                        </div>
+
+                        <div class="movimientosBancarios col-xs-12">
+
+                            <div class="col-xs-4 tiempos">DIC</div>
+                            <div class="col-xs-4 tiempos active">MES</div>
+                            <div class="col-xs-4 tiempos">SEMANA</div>
+
+                            <h1 id="movimientos">Movimientos</h1>
+
+                        </div>
+
+                        <div class="compras col-xs-12">
+
+                            <div id="boton_ampliar">+</div>
+
+
+                            <div class="col-xs-6 tiempos">
+                                <p>Apple Store</p>
+                                <p>Restaurante</p>
+                                <p>Pago de servicios</p>
+                                <p>Librería</p>
+
+                            </div>
+
+                            <div class="col-xs-6 tiempos">
+                                <p>$400.00</p>
+                                <p>$155.00</p>
+                                <p>$256.87</p>
+                                <p>$302.76</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row cuentaRow">
+                    <div class="col-xs-12 tac" >
+                        <ul class="detalleTarjetas" onclick="showDetail('dt3');" id="cuentaRowdt3">
+                            <li><img src="images/icons/visa.png" width="100" height="50" alt="" />
+                                <span>1822 **** **** **00</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="detalleTarjeta" id="dt3" style="display:none;">
+                        <div class="col-xs-12 detalles">
+                            <img src="images/otros/balance_tarjeta.png" width="385" height="186" alt="" />
+                        </div>
+
+                        <div class="movimientosBancarios col-xs-12">
+
+                            <div class="col-xs-4 tiempos">DIC</div>
+                            <div class="col-xs-4 tiempos active">MES</div>
+                            <div class="col-xs-4 tiempos">SEMANA</div>
+
+                            <h1 id="movimientos">Movimientos</h1>
+
+                        </div>
+
+                        <div class="compras col-xs-12">
+
+                            <div id="boton_ampliar">+</div>
+
+
+                            <div class="col-xs-6 tiempos">
+                                <p>Apple Store</p>
+                                <p>Restaurante</p>
+                                <p>Pago de servicios</p>
+                                <p>Librería</p>
+
+                            </div>
+
+                            <div class="col-xs-6 tiempos">
+                                <p>$400.00</p>
+                                <p>$155.00</p>
+                                <p>$256.87</p>
+                                <p>$302.76</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    <!-- END_CUSTOM_CODE_cuentasView -->
+</div>
