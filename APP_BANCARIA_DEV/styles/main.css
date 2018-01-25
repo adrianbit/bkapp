@@ -13,6 +13,10 @@
     text-align:center;
 }
 
+.tawc{
+    text-align:-webkit-center;
+}
+
 .tar{
     text-align:right;
 }

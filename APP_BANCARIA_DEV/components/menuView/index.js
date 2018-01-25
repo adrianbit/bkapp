@@ -10,8 +10,7 @@ app.localization.registerView('menuView');
 // Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes
 
 function selectMenu(view,e){
-    $('#'+e.id).animateCss('pulse');
-    goto(view);
+    $('#'+e.id).animateCss('pulse',function(){ goto(view); });
 }
 
 function cssMenu(){

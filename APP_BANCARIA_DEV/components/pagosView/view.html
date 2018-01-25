@@ -1,0 +1,70 @@
+<div style="position:fixed;" data-role="view" data-title="View" data-layout="main-nonav" data-model="app.pagosView" data-show="app.pagosView.onShow" data-after-show="app.pagosView.afterShow" id="pagosViewScreen" class="screen">
+    <header data-role="header" style="display:none;">
+        <div data-role="navbar" class="header-text insideHeader" style="background-image:linear-gradient(to right, rgb(246, 163, 38) 0%, rgb(246, 163, 38) 100%);">
+            <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button" onclick="overlayMenu('homeScreen');"></a>
+        </div>
+    </header>
+
+    <!-- START_CUSTOM_CODE_pagosView -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+        <div class="grid insideGrid" id="pagosGrid">
+
+            <div class="row" style="margin-top:20px;">
+                <div class="col-xs-2 tal">
+                    <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button">
+                        <img class="menuHamburgesa" src="images/menu/icono_hamburguesa.png" width="30" height="30" alt="" />
+                    </a>
+                </div>
+                <div class="col-xs-10 tac">
+                    <img class="logoStGeorgeMenu" src="images/logos/Logo_color.png" alt="Logo St. George" onclick="gotoMenu();"/>
+                </div>
+            </div>
+
+            <div id="" style="margin-top:20px;">
+                <div class="col-xs-12 tac cuentaDos cuenta_opcion">
+                    <h1>1234 **** **** **57</h1>
+                    <img class="card" src="images/otros/tarjeta-ST-George2.png" />
+                    <img class="cardSlide" src="images/otros/tarjeta-ST-George2.png" />
+                </div>
+
+                <div class="col-xs-12 tac detallesTransaccion">
+                    <h1>Selecciona al beneficiario</h1>
+                    <div class="col-xs-3 menuBeneficiario">
+                        <div id="anadirBeneficiario">Añadir nueva cuenta</div>
+                    </div>
+                    <div class="col-xs-3 menuBeneficiario">
+                        <img src="images/otros/cuadroBeneficiario.png" width="150" height="150" alt="" />
+                    </div>
+                    <div class="col-xs-3 menuBeneficiario">
+                        <img src="images/otros/cuadroBeneficiariocuatro.png" width="150" height="150" alt="" />
+                    </div>
+                    <div class="col-xs-3 menuBeneficiario">
+                        <img src="images/otros/cuadroBeneficiariodos.png" width="150" height="150" alt="" />
+                    </div>
+                </div>
+
+                <div class="col-xs-12 tac">
+                    <div class="formularioTransaccion formt">
+                        <label> Cantidad:</label><br><input type="text" value="" placeholder="Ingrese la cantidad">
+                    </div>
+                </div>
+
+                <div class="col-xs-12 tac">
+                    <div class="formularioTransaccion formt">
+                        <label> Descripción:</label><br> 
+                        <select>
+                                <option value="">Elige una opción</option>
+                                <option>Transferencia Privada</option>
+                                <option>Pago de Servicios</option>
+                                <option>Otro</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 tac">
+                    <input class="commonBtn" type="button" value="REALIZAR PAGO">
+                </div>
+            </div>
+        </div>
+    <!-- END_CUSTOM_CODE_pagosView -->
+</div>

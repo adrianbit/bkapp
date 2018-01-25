@@ -18,5 +18,11 @@
   },
   "cuentasView": {
     "title": "Cuentas View"
+  },
+  "transferenciasView": {
+    "title": "Transferencias View"
+  },
+  "pagosView": {
+    "title": "Pagos View"
   }
 }

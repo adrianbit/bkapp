@@ -1,0 +1,101 @@
+<div style="position:fixed;"  data-role="view" data-title="View" data-layout="main-nonav" data-model="app.transferenciasView" data-show="app.transferenciasView.onShow" data-after-show="app.transferenciasView.afterShow" id="transferenciasViewScreen" class="screen">
+    <header data-role="header" style="display:none;">
+        <div data-role="navbar" class="header-text insideHeader" style="background-image:linear-gradient(to right, rgb(246, 163, 38) 0%, rgb(246, 163, 38) 100%);">
+            <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button" onclick="overlayMenu('homeScreen');"></a>
+        </div>
+    </header>
+
+    <!-- START_CUSTOM_CODE_transferenciasView -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+        <div class="grid insideGrid" id="transferenciasGrid">
+
+            <div class="row" style="margin-top:20px;">
+                <div class="col-xs-2 tal">
+                    <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button">
+                        <img class="menuHamburgesa" src="images/menu/icono_hamburguesa.png" width="30" height="30" alt="" />
+                    </a>
+                </div>
+                <div class="col-xs-10 tac">
+                    <img class="logoStGeorgeMenu" src="images/logos/Logo_color.png" alt="Logo St. George" onclick="gotoMenu();"/>
+                </div>
+            </div>
+
+            <div id="" style="margin-top:20px;">
+                <div class="col-xs-12 tawc">
+                    <h2 class="nombreSeleccion">Transferencias</h2>
+                </div>
+
+                <div class="tac formulario">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <p class="alineacion">De:</p>
+                        </div>
+                        <div class="col-xs-9">
+                            <select name="seleccionTransferencia">
+                                <option value="">Selecciona una cuenta o tarjeta</option>
+                                <option>1234 **** **** **56</option>
+                                <option>7847 **** **** **98</option>
+                                <option>3489 **** **** **43</option>
+                                <option>9326 **** **** **23</option>
+                                <option>6534 **** **** **34</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <p class="alineacion">Para:</p>
+                        </div>
+                        <div class="col-xs-9 tal">
+                            <label> <input type="radio" name="tipoCuenta" value="Cuenta Personal"> Cuenta personal</label>
+                            <label> <input type="radio" name="tipoCuenta" value="Otra cuenta"> Otra cuenta</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tac formulario">
+                    <div class="row">
+                        <div class="col-xs-5 tal">
+                            <p class="alineacion">Cuenta:</p>
+                        </div>
+                        <div class="col-xs-7 tac">
+                            <select name="seleccionTransferencia">
+                                <option value="">Selecciona una cuenta</option>
+                                <option>1234 **** **** **56</option>
+                                <option>7847 **** **** **98</option>
+                                <option>3489 **** **** **43</option>
+                                <option>9326 **** **** **23</option>
+                                <option>6534 **** **** **34</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 tac formulario">
+                    <span style="font-size:1.2em;color:#006338;">Importe:</span> <input class="importe" type="number" name="importe" value="" placeholder="(Ingresa el importe)">
+                </div>
+
+                <div class="col-xs-12 tac formulario">
+                    <h1 class="fecha">Programar a fecha futura</h1>
+                    <form>
+                        <p>
+                            Fecha: <input type="date" class="fechayhora">
+                        </p>
+
+                        <p>
+                            Hora: <input type="time" class="fechayhora">
+                        </p>
+                    </form>
+                </div>
+
+                <div class="col-xs-12 tac formulario">
+                    <div class="col-xs-6 tac">
+                        <input class="botones" type="button" value="CANCELAR">
+                    </div>
+                    <div class="col-xs-6 tac">
+                        <input class="botones" type="button" value="ACEPTAR">
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- END_CUSTOM_CODE_transferenciasView -->
+</div>

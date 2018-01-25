@@ -33,7 +33,7 @@
                 <div class="row iconsMenu">
                     <div class="col-xs-1"></div>
                     <div class="col-xs-5 tac">
-                        <img src="images/menu/icono_cuenta.png" class="imageMenu" onclick="selectMenu('components/cuentasView/view.html',this);"/>
+                        <img src="images/menu/icono_cuenta.png" class="imageMenu" id="cuentasMenu" onclick="selectMenu('components/cuentasView/view.html',this);"/>
                     </div>
                     <div class="col-xs-5 tac">
                         <img src="images/menu/icono_tarjeta.png" class="imageMenu" />
@@ -53,10 +53,10 @@
                 <div class="row iconsMenu" style="margin-top:30px;">
                     <div class="col-xs-1"></div>
                     <div class="col-xs-5 tac">
-                        <img src="images/menu/icono_pagar.png" class="imageMenu" style=""/>
+                        <img src="images/menu/icono_pagar.png" class="imageMenu" id="pagosMenu" onclick="selectMenu('components/pagosView/view.html',this);"/>
                     </div>
                     <div class="col-xs-5 tac">
-                        <img src="images/menu/icono_transferir.png" class="imageMenu" />
+                        <img src="images/menu/icono_transferir.png" class="imageMenu" id="transferenciasMenu" onclick="selectMenu('components/transferenciasView/view.html',this);"/>
                     </div>
                     <div class="col-xs-1"></div>
                 </div>

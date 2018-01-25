@@ -37,6 +37,20 @@
       "components": [],
       "title": "Cuentas View",
       "addToNavigation": false
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "transferenciasView",
+      "components": [],
+      "title": "Transferencias View",
+      "addToNavigation": false
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "pagosView",
+      "components": [],
+      "title": "Pagos View",
+      "addToNavigation": false
     }
   ],
   "dataProviders": [],
