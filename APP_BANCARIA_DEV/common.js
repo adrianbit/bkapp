@@ -24,6 +24,16 @@ $.fn.extend({
     }
 });
 
+function menuL(){
+    $('.menuHPrincipal').hide();
+    $('.menuHLogin').show();
+}
+
+function menuP(){
+    $('.menuHPrincipal').show();
+    $('.menuHLogin').hide();
+}
+
 function goto(view){
     app.mobileApp.navigate(view);
 }

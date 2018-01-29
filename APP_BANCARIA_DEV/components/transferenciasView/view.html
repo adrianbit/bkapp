@@ -7,6 +7,49 @@
 
     <!-- START_CUSTOM_CODE_transferenciasView -->
     <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+        <div class="grid insideGrid transaccionExitosa" id="transferirResponse" style="display:none;">
+
+            <div class="col-xs-12 tac fondoTransaccion">
+
+                <img id="boton_exito" src="images/icons/boton_advertencia.png" width="150" height="150" alt="" />
+
+                <h2>Gracias</h2>
+                <h1>Transacción cancelada</h1>
+
+                <div class="col-xs-6 tac transaccionDetalle">
+
+                    <h1>Fecha</h1>
+                    <h2>20 Octubre, 2017</h2>
+
+                    <h1>Para</h1>
+                    <h2>Juana Vega</h2>
+                    <p>juana.vega@mail.com</p>
+
+                    <h1>Cantidad</h1>
+                    <h2>$2,500.00</h2>
+                </div>
+
+                <div class="col-xs-6 tac transaccionDetalle">
+                    <h1>Hora</h1>
+                    <h2>02:45 PM</h2>
+                    <div class="cuadroBeneficiario">
+                        <img src="images/otros/cuadroBeneficiariocuatro.png" width="150" height="150" alt="" />
+                    </div>
+                </div>
+
+                <div class="col-xs-12 tac">
+                </div>
+                <div class="col-xs-12 tac transaccionDetalle">
+                    <div class="tarjeta_transaccion">
+                        <img class="mastercard_transaccion" src="images/icons/mastercard.png" width="100" height="50" alt="" />
+                        <h1>Tarjeta Débito</h1>
+                        <h2>Master Card **43</h2>
+                    </div>
+                </div>
+            </div>
+            <img id="boton_cerrartransaccion" src="images/icons/boton_cerrar.png" onclick="cerrarTransferirRespuesta();" width="150" height="150" alt="" />
+        </div>
+        
         <div class="grid insideGrid" id="transferenciasGrid">
 
             <div class="row" style="margin-top:20px;">
@@ -54,10 +97,10 @@
 
                 <div class="tac formulario">
                     <div class="row">
-                        <div class="col-xs-5 tal">
+                        <div class="col-xs-4 tal">
                             <p class="alineacion">Cuenta:</p>
                         </div>
-                        <div class="col-xs-7 tac">
+                        <div class="col-xs-8 tac">
                             <select name="seleccionTransferencia">
                                 <option value="">Selecciona una cuenta</option>
                                 <option>1234 **** **** **56</option>
@@ -70,8 +113,15 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 tac formulario">
-                    <span style="font-size:1.2em;color:#006338;">Importe:</span> <input class="importe" type="number" name="importe" value="" placeholder="(Ingresa el importe)">
+                <div class="tac formulario">
+                    <div class="row">
+                        <div class="col-xs-4 tal">
+                            <p class="alineacion">Importe:</p>
+                        </div>
+                        <div class="col-xs-8 tac">
+                            <input class="importe" type="number" name="importe" value="" placeholder="(Ingresa el importe)">
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col-xs-12 tac formulario">
@@ -89,10 +139,10 @@
 
                 <div class="col-xs-12 tac formulario">
                     <div class="col-xs-6 tac">
-                        <input class="botones" type="button" value="CANCELAR">
+                        <input class="botones" type="button" value="CANCELAR" onclick="gotoMenu();">
                     </div>
                     <div class="col-xs-6 tac">
-                        <input class="botones" type="button" value="ACEPTAR">
+                        <input class="botones" type="button" id="transferirBtn" onclick="transferir();" value="ACEPTAR">
                     </div>
                 </div>
             </div>

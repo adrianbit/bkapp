@@ -1,4 +1,4 @@
-<div style="position:fixed;" data-role="view" data-title="View" data-layout="main-nonav" data-model="app.pagosView" data-show="app.pagosView.onShow" data-after-show="app.pagosView.afterShow" id="pagosViewScreen" class="screen">
+<div style="position:fixed;overflow-x:hidden;" data-role="view" data-title="View" data-layout="main-nonav" data-model="app.pagosView" data-show="app.pagosView.onShow" data-after-show="app.pagosView.afterShow" id="pagosViewScreen" class="screen">
     <header data-role="header" style="display:none;">
         <div data-role="navbar" class="header-text insideHeader" style="background-image:linear-gradient(to right, rgb(246, 163, 38) 0%, rgb(246, 163, 38) 100%);">
             <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button" onclick="overlayMenu('homeScreen');"></a>
@@ -7,6 +7,49 @@
 
     <!-- START_CUSTOM_CODE_pagosView -->
     <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+        <div class="grid insideGrid transaccionExitosa" id="pagoResponse" style="display:none;overflow-x:hidden;">
+
+            <div class="col-xs-12 tac fondoTransaccion">
+
+                <img id="boton_exito" src="images/icons/boton_exito.png" width="150" height="150" alt="" />
+
+                <h2>Gracias</h2>
+                <h1>Transacción exitosa</h1>
+
+                <div class="col-xs-6 tac transaccionDetalle">
+
+                    <h1>Fecha</h1>
+                    <h2>20 Octubre, 2017</h2>
+
+                    <h1>Para</h1>
+                    <h2>Juana Vega</h2>
+                    <p>juana.vega@mail.com</p>
+
+                    <h1>Cantidad</h1>
+                    <h2>$2,500.00</h2>
+                </div>
+
+                <div class="col-xs-6 tac transaccionDetalle">
+                    <h1>Hora</h1>
+                    <h2>02:45 PM</h2>
+                    <div class="cuadroBeneficiario">
+                        <img src="images/otros/cuadroBeneficiario.png" width="150" height="150" alt="" />
+                    </div>
+                </div>
+
+                <div class="col-xs-12 tac">
+                </div>
+                <div class="col-xs-12 tac transaccionDetalle">
+                    <div class="tarjeta_transaccion">
+                        <img class="mastercard_transaccion" src="images/icons/mastercard.png" width="100" height="50" alt="" />
+                        <h1>Tarjeta Débito</h1>
+                        <h2>Master Card **43</h2>
+                    </div>
+                </div>
+            </div>
+            <img id="boton_cerrartransaccion" src="images/icons/boton_cerrar.png" onclick="cerrarPagoRespuesta();" width="150" height="150" alt="" />
+        </div>
+        
         <div class="grid insideGrid" id="pagosGrid">
 
             <div class="row" style="margin-top:20px;">
@@ -21,6 +64,7 @@
             </div>
 
             <div id="" style="margin-top:20px;">
+
                 <div class="col-xs-12 tac cuentaDos cuenta_opcion">
                     <h1>1234 **** **** **57</h1>
                     <img class="card" src="images/otros/tarjeta-ST-George2.png" />
@@ -62,7 +106,7 @@
                 </div>
 
                 <div class="col-xs-12 tac">
-                    <input class="commonBtn" type="button" value="REALIZAR PAGO">
+                    <input class="commonBtn" id="pagarBtn" type="button" onclick="pagar();" value="REALIZAR PAGO">
                 </div>
             </div>
         </div>

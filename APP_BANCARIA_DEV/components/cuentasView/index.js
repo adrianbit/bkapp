@@ -23,7 +23,7 @@ $.fn.extend({
             $('.detalleTarjeta').hide('');
             $(this).show();
         } else {
-            $('.detalleTarjeta').animateCss('bounceOutDown', function(){ $('.detalleTarjeta').hide(); });
+            $('.detalleTarjeta').hide();//$('.detalleTarjeta').animateCss('bounceOutDown', function(){  });
         }
         return this;
     }
