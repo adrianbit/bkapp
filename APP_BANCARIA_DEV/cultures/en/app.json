@@ -36,5 +36,8 @@
   },
   "contactoView": {
     "title": "Contacto View"
+  },
+  "contactoLview": {
+    "title": "Contacto Login View"
   }
 }

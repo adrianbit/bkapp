@@ -79,6 +79,13 @@
       "components": [],
       "title": "Contacto View",
       "addToNavigation": false
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "contactoLview",
+      "components": [],
+      "title": "Contacto Login View",
+      "addToNavigation": false
     }
   ],
   "dataProviders": [],

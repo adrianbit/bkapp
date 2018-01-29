@@ -1,17 +1,70 @@
 <div data-role="view" data-title="View" data-layout="main-nonav" data-model="app.tarjetasView" data-show="app.tarjetasView.onShow" data-after-show="app.tarjetasView.afterShow" id="tarjetasViewScreen" class="screen">
-    <header data-role="header">
-        <div data-role="navbar" class="header-text">
-
-            <span data-bind="text: strings.tarjetasView.title"></span>
-
-            <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
-
+    <header data-role="header" style="display:none;">
+        <div data-role="navbar" class="header-text insideHeader" style="background-image:linear-gradient(to right, rgb(246, 163, 38) 0%, rgb(246, 163, 38) 100%);">
+            <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button" onclick="overlayMenu('homeScreen');"></a>
         </div>
     </header>
 
-
     <!-- START_CUSTOM_CODE_tarjetasView -->
     <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+        <div class="grid insideGrid" id="tarjetasGrid">
 
+            <div class="row" style="margin-top:20px;">
+                <div class="col-xs-2 tal">
+                    <a data-role="button" href="#appDrawer" onclick="menuP();" data-rel="drawer" data-align="left" data-icon="drawer-button">
+                        <img class="menuHamburgesa" src="images/menu/icono_hamburguesa.png" width="30" height="30" alt="" />
+                    </a>
+                </div>
+                <div class="col-xs-10 tac">
+                    <img class="logoStGeorgeMenu" src="images/logos/Logo_color.png" alt="Logo St. George" onclick="gotoMenu();"/>
+                </div>
+            </div>
+
+            <div id="" style="margin-top:20px;">
+
+                <div class="col-xs-12 tac cuentaDos cuenta_opcion">
+                    <h1>9268 **** **** **23</h1>
+                    <img class="card" src="images/otros/tarjeta-ST-George2.png" />
+                    <img class="cardSlide" src="images/otros/tarjeta-ST-George2.png" />
+                </div>
+
+                <div class="detalleTarjeta" id="">
+
+                    <div class="movimientosBancarios2 col-xs-12">
+
+                        <div class="col-xs-4 tiempos">DIC</div>
+                        <div class="col-xs-4 tiempos active">MES</div>
+                        <div class="col-xs-4 tiempos">SEMANA</div>
+
+                        <h1 id="movimientos2">Movimientos</h1>
+
+                    </div>
+
+                    <div class="compras col-xs-12">
+
+                        <div class="col-xs-6 tiempos">
+                            <p>Apple Store</p>
+                            <p>Restaurante</p>
+                            <p>Pago de servicios</p>
+                            <p>Librería</p>
+
+                        </div>
+
+                        <div class="col-xs-6 tiempos">
+                            <p>$400.00</p>
+                            <p>$155.00</p>
+                            <p>$256.87</p>
+                            <p>$302.76</p>
+                        </div>
+                    
+                    <div class="col-xs-12 pleca"> </div>
+                    <image class="flecha" src=images/icons/flecha.png />
+
+                    </div>
+                </div>
+            
+            </div>
+
+        </div>
     <!-- END_CUSTOM_CODE_tarjetasView -->
 </div>

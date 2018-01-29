@@ -2,7 +2,7 @@
 
 app.transferenciasView = kendo.observable({
     onShow: function() {},
-    afterShow: function() {}
+    afterShow: function() { setInterval(function(){animateTarjetas();},3000);}
 });
 app.localization.registerView('transferenciasView');
 
@@ -17,6 +17,10 @@ function transferir(){
 
 function cerrarTransferirRespuesta(){
     $('#transferirResponse').animateCss('zoomOut',function(){ $('#transferirResponse').hide(); });
+}
+
+function animateTarjetas(){
+    $('.flecha').animateCss('pulse');
 }
 
 // END_CUSTOM_CODE_transferenciasView

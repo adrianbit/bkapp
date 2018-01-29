@@ -2,14 +2,17 @@
 
 app.home = kendo.observable({
     onShow: function() {
-        goto("components/menuView/view.html");
+        //goto("components/menuView/view.html");
         //goto("components/cuentasView/view.html");
         css(); 
         var video = document.getElementById("video-background");
         video.play();
+        $('#video-background').attr('playsinline','');
     },
-    afterShow: function() { 
-        setTimeout(function(){ animate(); }, 2700);
+    afterShow: function() {
+        setTimeout(function(){
+            animate(); 
+        }, 2700);
     }
 });
 app.localization.registerView('home');

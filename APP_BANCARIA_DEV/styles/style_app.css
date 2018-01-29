@@ -8,6 +8,7 @@ body{
 	background-color: rgba(255,255,255,0.03);
 }
 
+
 #homeGrid{
     height:-webkit-fill-available;
     min-height:670px;
@@ -16,7 +17,7 @@ body{
 }
 
 #menuGrid{
-    background-color: rgba(255,255,255,0.02);
+    background-color: rgba(255,255,255,0);
     margin-top: -20px;
     padding-top: 20px;
 }
@@ -194,7 +195,20 @@ div{
 	text-align: center !important;
 }
 
-.imageMenu{
+.imageMenu1{
+    background-color: #fff;
+    border-radius: 10%;
+    padding: 10px;
+    width: 75%;
+    cursor: pointer;
+}
+
+.imageMenu1:hover{
+    -webkit-filter: brightness(105%); /* Safari */
+    filter: brightness(105%);
+}
+
+.imageMenu2{
     background-color: #fff;
     border-radius: 10%;
     padding: 10px;
@@ -202,7 +216,7 @@ div{
     cursor: pointer;
 }
 
-.imageMenu:hover{
+.imageMenu2:hover{
     -webkit-filter: brightness(105%); /* Safari */
     filter: brightness(105%);
 }
@@ -245,7 +259,7 @@ div{
 	height: auto; 
 	margin: auto;
     margin-top:0px;
-    background-color: rgba(0, 0, 0, 0.03);
+    background-color: rgba(0, 0, 0, 0.01);
     padding: 20px 0px;
 }
 
@@ -286,6 +300,18 @@ div{
 	margin: auto;
 }
 
+.flecha{
+    width: 12%;
+    height: auto;
+}
+
+.pleca {
+    width:90%;
+    margin-left: 5%; 
+    height: auto;
+    border-bottom: solid 2px #ddd5d5; 
+}
+
 
 /*DETALLES*/
 
@@ -317,6 +343,38 @@ div{
 	z-index: 2;
 }
 
+#movimientos{
+	font-size: 1.4em;
+	margin-top: 15%;
+	font-weight: 300;
+    color:white;
+}
+
+.movimientosBancarios2{
+	width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top:40px;
+    padding-top: 2%;
+    background-color: white;
+    color: #006838;
+    text-align: center;
+    align-content: center;
+	display: block;
+	position: relative;
+	box-shadow: 0px 4px 10px 4px lightgray;
+	z-index: 2;
+}
+
+#movimientos2{
+	font-size: 1.4em;
+	margin-top: 15%;
+	font-weight: 300;
+    color:#006838;
+}
+
 .tiempos{
 	margin-top: 5%;
 	font-weight: 300;
@@ -333,13 +391,6 @@ div{
 .tiempos:hover{
     border: solid 1.5px rgba(97,191,26,1);
     border-radius: 20px;
-}
-
-#movimientos{
-	font-size: 1.4em;
-	margin-top: 15%;
-	font-weight: 300;
-    color:white;
 }
 
 .cuentaRow{
@@ -961,8 +1012,9 @@ border-top: rgba(0,0,0,0.1 ) solid;
 }
 
 .fondoTransaccion h1{
-	font-size: 2em;
+	font-size: 1.1em !important;
 	border-bottom: solid 2px rgba(77,74,74,0.20);
+    padding-bottom: 2%;
 }
 
 .transaccionDetalle{
@@ -1035,6 +1087,7 @@ border-top: rgba(0,0,0,0.1 ) solid;
     margin-left: 40%;
     cursor:pointer;
     height:-webkit-fill-available;
+    margin-bottom: 10%;
 }
 
 #boton_cerrartransaccion:hover{
