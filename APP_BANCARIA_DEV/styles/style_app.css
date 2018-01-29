@@ -1229,3 +1229,10 @@ border-top: rgba(0,0,0,0.1 ) solid;
 	border: solid 3px rgb(0,99,56);
 	border-radius: 20px;
 }
+
+.inputContacto{
+    width: 100% !important;
+    text-align: -webkit-left !important;
+    border:none;
+    border-bottom: 1px solid #006838 !important;
+}

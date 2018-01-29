@@ -16,7 +16,7 @@
     <link href="styles/style_app.css" rel="stylesheet">
 
     <link href="assets/horizontal-timeline.css" rel="stylesheet">
-	<script src="assets/modernizr.js"></script>
+    <script src="assets/modernizr.js"></script>
 
     <script src="cordova.js"></script>
     <script src="kendo/js/jquery.min.js"></script>
@@ -27,6 +27,10 @@
 </head>
 
 <body id="kendoUiMobileApp">
+    <script src="components/contactoView/index.js"></script>
+    <script src="components/sucursalesLview/index.js"></script>
+    <script src="components/sucursalesView/index.js"></script>
+    <script src="components/tarjetasView/index.js"></script>
     <script src="components/pagosView/index.js"></script>
     <script src="components/transferenciasView/index.js"></script>
     <script src="components/cuentasView/index.js"></script>
@@ -56,18 +60,21 @@
         <ul id="navigation-container" data-role="listview">
             <div class="col-xs-12 menuH menuHLogin" style="border-top:1px dashed #d6d6d6;border-bottom:1px dashed #d6d6d6;">
                 <li>
-                    <a href="components/home/view.html"><img src="images/icons/icono_sucursales.png"><span class="navigation-link-text"><h1>Sucursales</h1></span></a>
+                    <a href="javascript:goto('components/sucursalesLview/view.html');"><img src="images/icons/icono_sucursales.png"><span class="navigation-link-text"><h1>Sucursales</h1></span></a>
                 </li>
                 <li>
-                    <a href="components/otraview/view.html"><img src="images/icons/icono_contacto.png"><span class="navigation-link-text"><h1>Contacto</h1></span></a>
+                    <a href="javascript:goto('components/otraview/view.html');"><img src="images/icons/icono_contacto.png"><span class="navigation-link-text"><h1>Contacto</h1></span></a>
                 </li>
                 <li>
-                    <a href="components/otraview/view.html"><img src="images/icons/icono_promociones.png"><span class="navigation-link-text"><h1>Página Web</h1></span></a>
+                    <a href="https://www.stgeorgesbank.com/" target="_blank"><img src="images/icons/icono_promociones.png"><span class="navigation-link-text"><h1>Página Web</h1></span></a>
                 </li>
             </div>
             <div class="col-xs-12 menuH menuHPrincipal">
                 <li>
-                    <a href="components/home/view.html"><img src="images/icons/icono_sucursales.png"><span class="navigation-link-text"><h1>Sucursales</h1></span></a>
+                    <a href="javascript:goto('components/sucursalesView/view.html');"><img src="images/icons/icono_sucursales.png"><span class="navigation-link-text"><h1>Sucursales</h1></span></a>
+                </li>
+                <li>
+                    <a href="https://www.stgeorgesbank.com/" target="_blank"><img src="images/icons/icono_promociones.png"><span class="navigation-link-text"><h1>Página Web</h1></span></a>
                 </li>
                 <!--<li>
                     <a href="components/otraview/view.html"><img src="images/icons/icono_servicios.png"><span class="navigation-link-text"><h1>Servicios</h1></span></a>
@@ -82,10 +89,10 @@
                     <a href="components/home/view.html"><img src="images/icons/icono_config.png"><span class="navigation-link-text"><h1>Configuración</h1></span></a>
                 </li>-->
                 <li>
-                    <a href="components/otraview/view.html"><img src="images/icons/icono_ayuda.png"><span class="navigation-link-text"><h1>Ayuda</h1></span></a>
+                    <a href="#"><img src="images/icons/icono_ayuda.png"><span class="navigation-link-text"><h1>Ayuda</h1></span></a>
                 </li>
                 <li>
-                    <a href="components/otraview/view.html"><img src="images/icons/icono_contacto.png"><span class="navigation-link-text"><h1>Contacto</h1></span></a>
+                    <a href="javascript:goto('components/contactoView/view.html');"><img src="images/icons/icono_contacto.png"><span class="navigation-link-text"><h1>Contacto</h1></span></a>
                 </li>
                 <!--<li>
                     <a href="components/otraview/view.html"><img src="images/icons/icono_telefono.png"><span class="navigation-link-text"><h1>No.de Emergencias</h1></span></a>
@@ -94,16 +101,16 @@
 
             <div class="col-xs-12 menuH menuHPrincipal">
                 <li>
-                    <a href="components/home/view.html"><img src="images/icons/icono_legal.png"><span class="navigation-link-text"><h1>Aviso Legal</h1></span></a>
+                    <a href="#"><img src="images/icons/icono_legal.png"><span class="navigation-link-text"><h1>Aviso Legal</h1></span></a>
                 </li>
                 <li>
-                    <a href="components/otraview/view.html"><img src="images/icons/icono_privacidad.png"><span class="navigation-link-text"><h1>Aviso de Privacidad</h1></span></a>
+                    <a href="#"><img src="images/icons/icono_privacidad.png"><span class="navigation-link-text"><h1>Aviso de Privacidad</h1></span></a>
                 </li>
             </div>
 
             <div class="col-xs-12 menuH menuHPrincipal">
                 <li>
-                    <a href="components/home/view.html"><img src="images/icons/icono_logout.png"><span class="navigation-link-text"><h1>Cerrar sesión</h1></span></a>
+                    <a href="javascript:goto('components/home/view.html');"><img src="images/icons/icono_logout.png"><span class="navigation-link-text"><h1>Cerrar sesión</h1></span></a>
                 </li>
             </div>
         </ul>

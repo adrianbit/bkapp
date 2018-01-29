@@ -24,5 +24,17 @@
   },
   "pagosView": {
     "title": "Pagos View"
+  },
+  "tarjetasView": {
+    "title": "Tarjetas View"
+  },
+  "sucursalesView": {
+    "title": "Sucursales View"
+  },
+  "sucursalesLview": {
+    "title": "Sucursales Login View"
+  },
+  "contactoView": {
+    "title": "Contacto View"
   }
 }
