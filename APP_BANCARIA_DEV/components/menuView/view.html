@@ -9,7 +9,7 @@
     <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
         <div class="grid insideGrid" id="menuGrid" style="">
 
-            <div class="row" style="margin-top:20px;">
+            <div class="row headerView" style="border-bottom:1px solid #b1b1b1;">
                 <div class="col-xs-2 tal">
                     <a data-role="button" href="#appDrawer" on-tap="menuP();" onclick="" data-rel="drawer" data-align="left" data-icon="drawer-button">
                         <img class="menuHamburgesa" src="images/menu/icono_hamburguesa.png" width="30" height="30" alt="" />
@@ -22,14 +22,13 @@
             
             <div class="col-xs-12 tac" style="margin-top:20px;">
                 <h2 class="nombreCliente">Rafael López Pérez</h2>
-                <h3><span style="color:#4e4e4e;">Balance</span><span style="color:#006838;"> $30,000</span></h3>
+                <h3>
+                    <span style="color:#4e4e4e;font-weight:bold;">Último ingreso :</span>
+                    <span style="color:#006838;"> 5 febrero 2018  1:30pm</span>
+                </h3>
             </div>
 
-            <div id="balance">
-                <img src="images/menu/balance.png" width="406" height="162" alt="" />
-            </div>
-
-            <div id="menuPrincipal" style="display:none;">
+            <div id="menuPrincipal" style="display:none;margin-top:80px;">
                 <div class="row iconsMenu">
                     <div class="col-xs-1"></div>
                     <div class="col-xs-5 tac">
@@ -50,48 +49,49 @@
                     </div>
                     <div class="col-xs-1"></div>
                 </div>
-                <div class="row iconsMenu" style="margin-top:30px;">
-                    <div class="col-xs-4 tac">
-                        <img src="images/menu/icono_pagar.png" class="imageMenu2" id="pagosMenu" onclick="selectMenu('components/pagosView/view.html',this);"/>
+                <div class="row iconsMenu" style="margin-top:10px;">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-5 tac">
+                        <img src="images/menu/icono_pagar.png" class="imageMenu1" id="cuentasMenu" onclick="selectMenu('components/pagosView/view.html',this);"/>
                     </div>
-                    <div class="col-xs-4 tac">
-                        <img src="images/menu/icono_transferir.png" class="imageMenu2" id="transferenciasMenu" onclick="selectMenu('components/transferenciasView/view.html',this);"/>
+                    <div class="col-xs-5 tac">
+                        <img src="images/menu/icono_transferir.png" class="imageMenu1" id="tarjetasMenu" onclick="selectMenu('components/transferenciasView/view.html',this);"/>
                     </div>
-                    <div class="col-xs-4 tac">
-                        <img src="images/menu/icono_solicitarprestamo.png" class="imageMenu2" id="prestamosMenu" onclick="selectMenu('components/prestamosView/view.html',this);"/>
-                    </div>
+                    <div class="col-xs-1"></div>
                 </div>
                 <div class="row iconsMenu" style="margin-top:10px;">
-                    <div class="col-xs-4 tac">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-5 tac">
                         <span class="textMenu">Pagos</span>
                     </div>
-                    <div class="col-xs-4 tac">
+                    <div class="col-xs-5 tac">
                         <span class="textMenu">Transferencias</span>
                     </div>
-                    <div class="col-xs-4 tac">
+                    <div class="col-xs-1"></div>
+                </div>
+                <div class="row iconsMenu" style="margin-top:10px;">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-5 tac">
+                        <img src="images/menu/icono_solicitarprestamo.png" class="imageMenu1" id="pagosMenu" onclick="selectMenu('components/pagosView/view.html',this);"/>
+                    </div>
+                    <div class="col-xs-5 tac">
+                        <img src="images/icons/icono_sucursales.png" class="imageMenu1" id="transferenciasMenu" onclick="selectMenu('components/transferenciasView/view.html',this);"/>
+                    </div>
+                    <div class="col-xs-1"></div>
+                </div>
+                <div class="row iconsMenu" style="margin-top:10px;">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-5 tac">
                         <span class="textMenu">Prestamos</span>
                     </div>
-                </div>
-                <!--<div class="row iconsMenu" style="margin-top:30px;">
-                    <div class="col-xs-1"></div>
                     <div class="col-xs-5 tac">
-                        <img src="images/menu/icono_pagar.png" class="imageMenu" id="pagosMenu" onclick="selectMenu('components/pagosView/view.html',this);"/>
-                    </div>
-                    <div class="col-xs-5 tac">
-                        <img src="images/menu/icono_transferir.png" class="imageMenu" id="transferenciasMenu" onclick="selectMenu('components/transferenciasView/view.html',this);"/>
+                        <span class="textMenu">Sucursales</span>
                     </div>
                     <div class="col-xs-1"></div>
                 </div>
-                <div class="row iconsMenu" style="margin-top:10px;">
-                    <div class="col-xs-1"></div>
-                    <div class="col-xs-5 tac">
-                        <span class="textMenu">Pagos</span>
-                    </div>
-                    <div class="col-xs-5 tac">
-                        <span class="textMenu">Transferencias</span>
-                    </div>
-                    <div class="col-xs-1"></div>
-                </div>-->
+                <div class="col-xs-12 tac botonIngresar" style="height:30px;bottom:20px;">
+                    <span style="font-weight:bold;">St. George Bank</span>
+                </div>
             </div>
         </div>
     <!-- END_CUSTOM_CODE_menuView -->

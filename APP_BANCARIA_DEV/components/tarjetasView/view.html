@@ -9,62 +9,187 @@
     <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
         <div class="grid insideGrid" id="tarjetasGrid">
 
-            <div class="row" style="margin-top:20px;">
+            <div class="row headerView" style="border-bottom:1px solid #b1b1b1;">
                 <div class="col-xs-2 tal">
-                    <a data-role="button" href="#appDrawer" onclick="menuP();" data-rel="drawer" data-align="left" data-icon="drawer-button">
+                    <a data-role="button" href="#appDrawer" on-tap="menuP();" onclick="" data-rel="drawer" data-align="left" data-icon="drawer-button">
                         <img class="menuHamburgesa" src="images/menu/icono_hamburguesa.png" width="30" height="30" alt="" />
                     </a>
                 </div>
                 <div class="col-xs-10 tac">
-                    <img class="logoStGeorgeMenu" src="images/logos/Logo_color.png" alt="Logo St. George" onclick="gotoMenu();"/>
+                    <img class="logoStGeorgeMenu" src="images/logos/Logo_color.png" alt="Logo St. George"/>
                 </div>
             </div>
 
-            <div id="" style="margin-top:20px;">
-
-                <div class="col-xs-12 tac cuentaDos cuenta_opcion">
-                    <h1>9268 **** **** **23</h1>
-                    <img class="card" src="images/otros/tarjeta-ST-George2.png" />
-                    <img class="cardSlide" src="images/otros/tarjeta-ST-George2.png" />
-                </div>
-
-                <div class="detalleTarjeta" id="">
-
-                    <div class="movimientosBancarios2 col-xs-12">
-
-                        <div class="col-xs-4 tiempos">DIC</div>
-                        <div class="col-xs-4 tiempos active">MES</div>
-                        <div class="col-xs-4 tiempos">SEMANA</div>
-
-                        <h1 id="movimientos2">Movimientos</h1>
-
-                    </div>
-
-                    <div class="compras col-xs-12">
-
-                        <div class="col-xs-6 tiempos">
-                            <p>Apple Store</p>
-                            <p>Restaurante</p>
-                            <p>Pago de servicios</p>
-                            <p>Librería</p>
-
-                        </div>
-
-                        <div class="col-xs-6 tiempos">
-                            <p>$400.00</p>
-                            <p>$155.00</p>
-                            <p>$256.87</p>
-                            <p>$302.76</p>
-                        </div>
-                    
-                    <div class="col-xs-12 pleca"> </div>
-                    <image class="flecha" src=images/icons/flecha.png />
-
-                    </div>
-                </div>
-            
+            <div class="col-xs-12 tawc" style="border:1px solid #b1b1b1;padding:10px 0px;">
+                <h2 class="nombreSeleccion">Tarjetas</h2>
             </div>
 
+            <div id="detalleTarjetas" style="margin-top:20px;">
+
+                <div class="row cuentaRow">
+                    <div class="col-xs-12 tac tarjetaDiv" id="cuentaRowdt1">
+                        <div class="col-xs-3" style="padding:0px;" onclick="showDetail('dt1');">
+                            <img src="images/icons/mastercard.png" style="margin-top:20px;width:100%;height:auto;" />
+                        </div>
+                        <div class="col-xs-9" style="padding:0px;" onclick="showDetail('dt1');">
+                            <div class="col-xs-12" style="border-bottom:1px solid #c1c1c1;padding-bottom:5px;margin-bottom: 5px;">
+                                <span style="font-weight:bold;color:#333;float:left;">TIPO DE TARJETA</span>
+                                <span style="float:right;font-weight:bold;color:#006838;">**** 8357</span>
+                            </div>
+                            <div class="col-xs-6 tal" style="padding-right:0px;border-right:1px solid #adadad;">
+                                <span style="color:#ababab;">Saldo</span><br/>$824.11
+                            </div>
+                            <div class="col-xs-6 tar" style="padding-left:0px;">
+                                <span style="color:#ababab;">Disponible</span><br/>$990.32
+                            </div>
+                            <div class="col-xs-12 tar" style="margin-top:5px;border-top:1px solid #adadad;">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 tar" style="padding-right:0px;margin-top:5px;">
+                            <div style="float:right;cursor:pointer;" onclick="dotsMenu('dt1')"><img src="images/icons/dots.png" style="width:auto;height:10px;margin-right:15px;"/></div>
+                            <input class="botones botonesdt1" type="button" id="commonBtn" value="PAGAR TARJETA" style="display:none;margin:0px;float:right;margin-top:5px;margin-right:10px;border-radius: 2px;padding: 0px 5px;">
+                            <input class="botones botonesdt1" type="button" id="commonBtn" value="CONSULTA DE PIN" style="display:none;margin:0px;float:right;margin-top:5px;margin-right:10px;border-radius: 2px;padding: 0px 5px;">
+                        </div>
+                    </div>
+
+                    <div class="detalleTarjeta" id="dt1" style="display:none;">
+
+                        <div class="movimientosBancarios col-xs-12">
+
+                            <div class="col-xs-4"><div class="tiempos">CORRIENTES</div></div>
+                            <div class="col-xs-4"><div class="tiempos active">FLOTANTES</div></div>
+                            <div class="col-xs-4"><div class="tiempos">RESUMEN</div></div>
+                            <div class="col-xs-12"><h1 id="movimientos">Movimientos</h1></div>
+
+                        </div>
+
+                        <div class="compras col-xs-12">
+
+                            <div class="col-xs-3">
+                                <span style="margin:0px;font-size:13px;color:#ababab;">06 FEB 18</span><br/>
+                                <span style="margin:0px;font-size:13px;color:#ababab;">01 FEB 18</span><br/>
+                                <span style="margin:0px;font-size:13px;color:#ababab;">29 ENE 18</span><br/>
+                                <span style="margin:0px;font-size:13px;color:#ababab;">27 ENE 18</span><br/>
+                            </div>
+                            <div class="col-xs-6 tac" style="padding:0px;">
+                                <span style="font-weight:bold;font-size:14px;">Apple Store</span><br/>
+                                <span style="font-weight:bold;font-size:14px;">Restaurante</span><br/>
+                                <span style="font-weight:bold;font-size:14px;">Pago de servicios</span><br/>
+                                <span style="font-weight:bold;font-size:14px;">Librería</span><br/>
+                            </div>
+                            <div class="col-xs-3 tar">
+                                <span>$400.00</span><br/>
+                                <span>$155.00</span><br/>
+                                <span>$256.87</span><br/>
+                                <span>$302.76</span><br/>
+                            </div>
+
+                            <div class="col-xs-12 pleca"><image class="flecha" src=images/icons/flecha.png /></div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row cuentaRow">
+                    <div class="col-xs-12 tac tarjetaDiv" id="cuentaRowdt2">
+                        <div class="col-xs-3" style="padding:0px;" onclick="showDetail('dt2');">
+                            <img src="images/icons/visa.png" style="margin-top:20px;width:100%;height:auto;" />
+                        </div>
+                        <div class="col-xs-9" style="padding:0px;" onclick="showDetail('dt2');">
+                            <div class="col-xs-12" style="border-bottom:1px solid #c1c1c1;padding-bottom:5px;margin-bottom: 5px;">
+                                <span style="font-weight:bold;color:#333;float:left;">TIPO DE TARJETA</span>
+                                <span style="float:right;font-weight:bold;color:#006838;">**** 6767</span>
+                            </div>
+                            <div class="col-xs-6 tal" style="padding-right:0px;border-right:1px solid #adadad;">
+                                <span style="color:#ababab;">Saldo</span><br/>$924.01
+                            </div>
+                            <div class="col-xs-6 tar" style="padding-left:0px;">
+                                <span style="color:#ababab;">Disponible</span><br/>$990.32
+                            </div>
+                            <div class="col-xs-12 tar" style="margin-top:5px;border-top:1px solid #adadad;">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 tar" style="padding-right:0px;margin-top:5px;">
+                            <div style="float:right;cursor:pointer;" onclick="dotsMenu('dt2')"><img src="images/icons/dots.png" style="width:auto;height:10px;margin-right:15px;"/></div>
+                            <input class="botones botonesdt2" type="button" id="commonBtn" value="PAGAR TARJETA" style="display:none;margin:0px;float:right;margin-top:5px;margin-right:10px;border-radius: 2px;padding: 0px 5px;">
+                            <input class="botones botonesdt2" type="button" id="commonBtn" value="CONSULTA DE PIN" style="display:none;margin:0px;float:right;margin-top:5px;margin-right:10px;border-radius: 2px;padding: 0px 5px;">
+                        </div>
+                    </div>
+
+                    <div class="detalleTarjeta" id="dt2" style="display:none;">
+
+                        <div class="movimientosBancarios col-xs-12">
+
+                            <div class="col-xs-4"><div class="tiempos">CORRIENTES</div></div>
+                            <div class="col-xs-4"><div class="tiempos">FLOTANTES</div></div>
+                            <div class="col-xs-4"><div class="tiempos active">RESUMEN</div></div>
+                            <div class="col-xs-12"><h1 id="movimientos">Movimientos</h1></div>
+
+                        </div>
+
+                        <div class="compras col-xs-12">
+
+                            <div class="col-xs-12 tac" style="margin-bottom:20px;">
+                                <span style="margin:0px;font-size:15px;color:#006838;">FECHA DE CORTE : 06 FEB 18</span>
+                                <br/>
+                                <span style="margin:0px;font-size:13px;color:#ababab;">RESUMEN</span>
+                                <br/>
+                            </div>
+                            <div class="col-xs-8 tal" style="">
+                                <span style="font-weight:bold;font-size:15px;color:#545454;">DESCRIPCIÓN</span><br/><br/>
+                                <span style="font-weight:bold;font-size:14px;">Restaurante</span><br/>
+                                <span style="font-weight:bold;font-size:14px;">Pago de servicios</span><br/>
+                                <span style="font-weight:bold;font-size:14px;">Librería</span><br/>
+                                <span style="font-weight:bold;font-size:14px;">Restaurante</span><br/>
+                                <span style="font-weight:bold;font-size:14px;">Pago de servicios</span><br/>
+                                <span style="font-weight:bold;font-size:14px;">Librería</span><br/>
+                            </div>
+                            <div class="col-xs-4 tar">
+                                <span style="font-weight:bold;font-size:15px;color:#545454;">DOLARES</span><br/><br/>
+                                <span>$155.00</span><br/>
+                                <span>$256.87</span><br/>
+                                <span>$302.76</span><br/>
+                                <span>$155.00</span><br/>
+                                <span>$256.87</span><br/>
+                                <span>$302.76</span><br/>
+                            </div>
+                            <div class="col-xs-12 tac" style="padding:10px;"><hr style="margin:0px;border-top:1px solid #e8e8e8;"/></div>
+                            <div class="col-xs-8 tal" style="">
+                                <span style="font-weight:bold;font-size:15px;color:#545454;">Saldo al corte</span><br/><br/>
+                            </div>
+                            <div class="col-xs-4 tar">
+                                <span style="font-weight:bold;font-size:15px;color:#545454;">$1289.12</span><br/><br/>
+                            </div>
+                            <div class="col-xs-12 tac" style="padding:10px;"><hr style="margin:0px;border-top:1px solid #e8e8e8;"/></div>
+                            <div class="col-xs-12 tac" style="margin-bottom:10px;">
+                                <span style="margin:0px;font-size:15px;color:#006838;">PAGO DE CONTADO</span>
+                            </div>
+                            <div class="col-xs-7 tal" style="">
+                                <span style="font-weight:bold;font-size:15px;color:#545454;">MONTO</span><br/><br/>
+                                <span style="font-weight:bold;font-size:14px;">$1287.12</span><br/>
+                            </div>
+                            <div class="col-xs-5 tar">
+                                <span style="font-weight:bold;font-size:15px;color:#545454;">PAGAR HASTA</span><br/><br/>
+                                <span>06 FEB 2018</span><br/>
+                            </div>
+                            <div class="col-xs-12 tac" style="padding:10px;"><hr style="margin:0px;border-top:1px solid #e8e8e8;"/></div>
+                            <div class="col-xs-12 tac" style="margin-bottom:10px;">
+                                <span style="margin:0px;font-size:15px;color:#006838;">PAGO MÍNIMO</span>
+                            </div>
+                            <div class="col-xs-7 tal" style="">
+                                <span style="font-weight:bold;font-size:15px;color:#545454;">MONTO</span><br/><br/>
+                                <span style="font-weight:bold;font-size:14px;">$1287.12</span><br/>
+                            </div>
+                            <div class="col-xs-5 tar">
+                                <span style="font-weight:bold;font-size:15px;color:#545454;">PAGAR HASTA</span><br/><br/>
+                                <span>06 FEB 2018</span><br/>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     <!-- END_CUSTOM_CODE_tarjetasView -->
 </div>

@@ -3,7 +3,7 @@
 app.home = kendo.observable({
     onShow: function() {
         //goto("components/menuView/view.html");
-        //goto("components/cuentasView/view.html");
+        goto("components/tarjetasView/view.html");
         css(); 
         var video = document.getElementById("video-background");
         video.play();

@@ -10,13 +10,13 @@
             <!--<iframe id="video-background" src="images/bg.mp4" frameborder="0" allowfullscreen style="width:1px;height:1px;"></iframe>-->
             <!--<div class="col-xs-12 tac"><img class="logoStGeorge" src="images/logos/Logo_color.png" atl="Logo St. George"/></div>-->
 
-            <div class="row" style="top:20px;left:0px;position:absolute;z-index:100;">
+            <!--<div class="row" style="top:20px;left:0px;position:absolute;z-index:100;">
                 <div class="col-xs-12 tal">
                     <a data-role="button" href="#appDrawer" onclick="menuL();" data-rel="drawer" data-align="left" data-icon="drawer-button" style="background-color: rgba(0,0,0,0);">
                         <img class="menuHamburgesa" src="images/menu/icono_hamburguesa.png" width="30" height="30" alt="" />
                     </a>
                 </div>
-            </div>
+            </div>-->
 
             <video playsinline id="video-background"> 
                 <source src=images/bgOscuro.mp4 type=video/mp4>
@@ -28,10 +28,22 @@
                 <input type="text" id="usuario" name="usuario" value="" placeholder="Usuario">
             </div>
         </div>
-        <a href="javascript:goto('components/loginView/view.html');" id="botonIngresar" style="display:none;">
-            <div class="botonIngresar">
+        <div class="botonIngresar" style="cursor:pointer;">
+            <div class="row" style="background-color:rgba(0, 0, 0, 0.5);padding:15px;padding-bottom:20px;">
+                <div class="col-xs-4 tac">
+                    <a href="javascript:goto('components/sucursalesLview/view.html');"><img style="width:40%;" src="images/icons/icono_sucursalesw.png"></a>
+                </div>
+                <div class="col-xs-4 tac">
+                    <a href="tel:00 61 2 9553 5333"><img style="width:40%;" src="images/icons/icono_telefonow.png"></a>
+                </div>
+                <div class="col-xs-4 tac">
+                    <a href="https://www.stgeorgesbank.com/" target="_blank"><img style="width:40%;" src="images/icons/icono_webw.png"></a>
+                </div>
+            </div>
+            <div class="col-xs-12" onclick="goto('components/loginView/view.html');" style="background-color:rgba(0, 105, 62, 0.95);">
                 <h1>Ingresar</h1>
             </div>
-        </a>
+            <div class="col-xs-12 tac" style="background-color:rgba(0, 0, 0, 0.8);padding:20px;color:white;padding-bottom:25px;"><span>St. George Bank</span></div>
+        </div>
     <!-- END_CUSTOM_CODE_home -->
 </div>

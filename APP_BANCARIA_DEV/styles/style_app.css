@@ -8,6 +8,11 @@ body{
 	background-color: rgba(255,255,255,0.03);
 }
 
+.headerView{
+    margin-top:20px;
+    /*border-bottom:1px solid #b1b1b1;*/
+    padding-bottom:10px;
+}
 
 #homeGrid{
     height:-webkit-fill-available;
@@ -81,11 +86,20 @@ body{
 
 .botonIngresar{
 	width: 100%;
-	height: 80px;
+	height: 220px;
 	/**background-color: #00693E;*/
-    background-color: rgba(0, 105, 62, 0.95);
 	position: absolute; 
-	bottom:0px;
+	bottom:-5px;
+    padding-top:20px;
+    font-display: center;
+}
+
+.botonIngresar2{
+	width: 100%;
+	height: 80px;
+	background-color:rgba(0, 105, 62, 0.95);
+	position: absolute; 
+	bottom:-0px;
     font-display: center;
 }
 
@@ -100,14 +114,25 @@ body{
     font-weight:bold;
 }
 
+.botonIngresar2 h1{
+	text-align: center;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+	color: whitesmoke;
+    line-height: 30px;
+    font-family: inherit;
+    font-size: 1.8em;
+    font-weight:bold;
+}
+
 
 /*PERFIL AUTENTICAR*/
 
 .panama{
-	background-color: seagreen;
+	background-color:rgba(0, 105, 62, 0.95);
 	width: 100%;
 	height: 50%;
-    background-image: url(../images/bgOscuro.jpg);
+    /**background-image: url(../images/bgOscuro.jpg);*/
     background-size: cover;
 }
 
@@ -117,6 +142,12 @@ body{
     float: right;
     margin-top: 3%;
     margin-right: 5%;
+}
+
+.back2{
+	height: auto;
+    width: 100%;
+    margin-top:10px;
 }
 
 .bienvenida{
@@ -183,9 +214,9 @@ div{
 /*MENU PRINCIPAL*/
 
 .logoStGeorgeMenu{
-	width: 100%;
+	width: 95%;
 	height: auto;
-	margin-top: 5%;
+	margin-top: -13px;
 }
 
 .nombreCliente{
@@ -309,7 +340,8 @@ div{
     width:90%;
     margin-left: 5%; 
     height: auto;
-    border-bottom: solid 2px #ddd5d5; 
+    border-top: solid 2px #ddd5d5;
+    margin-top: 20px;
 }
 
 
@@ -332,8 +364,9 @@ div{
     margin: 0 auto;
     margin-left: 5%;
     margin-right: 5%;
-    padding-top: 2%;
-    background-color: rgba(73,67,68,1.00);
+    padding: 0px;
+    padding-top:10px;
+    background-color: #383737;
     color: whitesmoke;
     text-align: center;
     align-content: center;
@@ -341,11 +374,11 @@ div{
 	position: relative;
 	box-shadow: 0px 4px 10px 4px lightgray;
 	z-index: 2;
+    margin-top:20px;
 }
 
 #movimientos{
 	font-size: 1.4em;
-	margin-top: 15%;
 	font-weight: 300;
     color:white;
 }
@@ -672,7 +705,7 @@ div{
     width: 100%;
     height: auto; 
 	vertical-align: middle;
-    margin: 5% 0%;
+    margin: 1% 0%;
 }
 
 .menuH{
@@ -1288,4 +1321,8 @@ border-top: rgba(0,0,0,0.1 ) solid;
     text-align: -webkit-left !important;
     border:none;
     border-bottom: 1px solid #006838 !important;
+}
+
+.tarjetaDiv{
+    margin-top:10px;
 }

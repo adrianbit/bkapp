@@ -7,32 +7,43 @@
 
     <!-- START_CUSTOM_CODE_sucursalesView -->
     <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->  
-        <div class="grid insideGrid" id="sucursalesGrid">
+        <div class="grid insideGrid" id="sucursalesLGrid">
 
-            <div class="row" style="margin-top:20px;">
+            <div class="row headerView">
                 <div class="col-xs-2 tal">
-                    <a data-role="button" href="#appDrawer" onclick="menuP();" data-rel="drawer" data-align="left" data-icon="drawer-button">
-                        <img class="menuHamburgesa" src="images/menu/icono_hamburguesa.png" width="30" height="30" alt="" />
-                    </a>
+                    <a href="javascript:goto('components/home/view.html')"><img class="back2" src="images/icons/replyG.png" /></a>
                 </div>
                 <div class="col-xs-10 tac">
-                    <img class="logoStGeorgeMenu" src="images/logos/Logo_color.png" alt="Logo St. George" onclick="gotoMenu();"/>
+                    <img class="logoStGeorgeMenu" src="images/logos/Logo_color.png" alt="Logo St. George"/>
                 </div>
             </div>
 
             <div id="" style="margin-top:20px;">
-                <div class="col-xs-12 tawc">
+                <div class="col-xs-12 tawc" style="border:1px solid #b1b1b1;padding:10px 0px;">
                     <h2 class="nombreSeleccion">Sucursales</h2>
                 </div>
                 <div class="col-xs-12 tawc" style="margin-top:20px;">
                     <select name="seleccionTransferencia" style="width:100%;margin-bottom:10px;height:40px;font-size:1.2em;">
-                        <option value="">Selecciona una sucursal</option>
-                        <option>**** ****</option>
-                        <option>**** ****</option>
+                        <option value="">Todos</option>
+                        <option value="" selected>Altos de Panama</option>
+                        <option value="">Casa Matriz</option>
+                        <option value="">Chitré</option>
+                        <option value="">Costa del Este</option>
+                        <option value="">David</option>
+                        <option value="">Los Andes</option>
+                        <option value="">Los Pueblos</option>
                     </select>
                 </div>
+                <div class="col-xs-12 tal" style="margin:20px 0px;padding:10px 30px;background-color:#f1f1f1;">
+                    <h2 style="color:#006838;font-weight:bold;">Dirección</h2>
+                    <p>Centro Comercial Country Plaza II - Local N.10</p>
+                    <h2 style="color:#006838;font-weight:bold;margin-top:10px;">Teléfono</h2>
+                    <p>(507) 270-5035</p>
+                    <h2 style="color:#006838;font-weight:bold;margin-top:10px;">Horario:</h2>
+                    <p>Lunes a Viernes 11:00 a.m. a 6:00 p.m. Sábados 9:00 a.m. a 12:00 m.d.</p>
+                </div>
                 <div class="col-xs-12 tawc">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4038377.440256645!2d-83.1910373320093!3d8.71736134398067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faca85caeb2178b%3A0xdef014685b8ecd02!2sEdificio+St.+Georges+Bank!5e0!3m2!1ses!2smx!4v1517195734594" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.2948326711953!2d-79.53082568566607!3d9.036846993515445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faca827b2f55c05%3A0xdeb7456c9e52a0f4!2sSt.+Georges+Bank+%7C+Altos+de+Panam%C3%A1!5e0!3m2!1ses!2sus!4v1517957767549" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>

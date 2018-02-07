@@ -14,9 +14,9 @@ function cssLogin(){
     var ww = $(window).width()+1;
 
     if (deviceType=="iPad"||deviceType=="iPhone")
-        $(".botonIngresar").css({'bottom':('-'+(wh+20)+'px')});
+        $(".botonIngresar2").css({'bottom':('-'+(wh+20)+'px')});
     else
-        $(".botonIngresar").css({'bottom':'-20px'});
+        $(".botonIngresar2").css({'bottom':'-20px'});
 }
 
 function animateLogin(){

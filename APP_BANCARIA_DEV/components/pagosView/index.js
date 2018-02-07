@@ -10,7 +10,7 @@ app.localization.registerView('pagosView');
 // Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes
 
 function pagar(){
-    $('#pagarBtn').animateCss('pulse');
+    $('#commonBtn').animateCss('pulse');
     $('#pagoResponse').show();
     $('#pagoResponse').animateCss('zoomIn');
 }

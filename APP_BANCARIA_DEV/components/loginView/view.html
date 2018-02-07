@@ -7,38 +7,48 @@
 
     <!-- START_CUSTOM_CODE_loginView -->
     <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+        <div class="grid insideGrid transaccionExitosa" id="pagoResponse" style="display:none;overflow-x:hidden;">
+            <div class="col-xs-12 tac fondoTransaccion">
+                <div class="col-xs-12 tac">
+                    <div class="col-xs-12 tal" style="margin-top:20px;">
+                        <h1 class="fecha" style="color:#006838;">Favor de ingresar tu token</h1>
+                        <input type="text" placeholder="" class="inputContacto" style="color: #afafaf;padding:5px 15px;"/>
+                    </div>
+                </div>
+            </div>
+            <img id="boton_cerrartransaccion" src="images/icons/boton_cerrar.png" onclick="cerrarPagoRespuesta();" width="150" height="150" alt="" />
+        </div>
         <div class="grid insideGrid">
 
             <div class="col-xs-12 panama">
                 <div class="col-xs-12" style="margin-top:20px;">
-                    <a href="index.html"><img class="back" src="images/login/reply.png" width="128" height="128" /></a>
+                    <a href="javascript:goto('components/home/view.html')"><img class="back" src="images/login/reply.png" width="128" height="128" /></a>
                 </div>
                 <div class="col-xs-12 bienvenida">
                     <h1>BIENVENIDO</h1>
                 </div>
-                <div class="col-xs-12 tac">
+                <div class="col-xs-12 tac" style="padding-bottom:40px;">
                     <img class="profile" src="images/login/foto_perfil.jpg" width="640" height="640" alt="" />
-                </div>
-                <div class="col-xs-12" style="margin:30px 0px;">
-                    <h2 class="nombre_usuario">R******* L****** P******</h2>
                 </div>
             </div>
 
             <div class="col-xs-12 tac" style="margin-top:40px;">
-                <a href="javascript:goto('components/home/view.html')" class="botonPerfil">¿Es el perfil correcto?</a>
+                <a href="javascript:goto('components/home/view.html')" class="botonPerfil">¿Tu imagen no corresponde?</a>
             </div>
 
             <div class="col-xs-12 tac" style="margin-top:60px;">
                 <img class="user" src="images/login/padlock.png" width="128" height="128" /> <input id="password" type="password" name="Contrasenia">
             </div>
+            <div class="col-xs-12 tar" style="margin-top:10px;padding-right:40px;">
+                <a href="javascript:goto('components/olvidasteView/view.html')" style="color:#6b6b6b;font-weight: bold;">¿Olvidaste tu contraseña?</a>
+            </div>
 
             <div class="password col-xs-12"></div>
 
-            <a href="javascript:goto('components/menuView/view.html');">
-                <div class="botonIngresar" style="line-height:40px;">
-                    <h1>Ingresar</h1>
-                </div>
-            </a>
+            <div class="botonIngresar2" style="line-height:40px;">
+                <a href="javascript:goto('components/menuView/view.html');"><h1>Ingresar</h1></a>
+            </div>
+            
         </div>
     <!-- END_CUSTOM_CODE_loginView -->
 </div>
