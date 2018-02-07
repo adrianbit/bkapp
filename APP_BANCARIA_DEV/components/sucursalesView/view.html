@@ -11,10 +11,12 @@
 
             <div class="row headerView">
                 <div class="col-xs-2 tal">
-                    <a href="javascript:goto('components/home/view.html')"><img class="back2" src="images/icons/replyG.png" /></a>
+                    <a data-role="button" href="#appDrawer" on-tap="menuP();" onclick="" data-rel="drawer" data-align="left" data-icon="drawer-button">
+                        <img class="menuHamburgesa" src="images/menu/icono_hamburguesa.png" width="30" height="30" alt="" />
+                    </a>
                 </div>
                 <div class="col-xs-10 tac">
-                    <img class="logoStGeorgeMenu" src="images/logos/Logo_color.png" alt="Logo St. George"/>
+                    <img class="logoStGeorgeMenu" src="images/logos/Logo_color.png" alt="Logo St. George" onclick="gotoMenu();"/>
                 </div>
             </div>
 

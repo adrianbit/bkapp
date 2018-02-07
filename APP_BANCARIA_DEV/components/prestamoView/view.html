@@ -1,0 +1,140 @@
+<div data-role="view" data-title="View" data-layout="main-nonav" data-model="app.prestamoView" data-show="app.prestamoView.onShow" data-after-show="app.prestamoView.afterShow" id="prestamoViewScreen" class="screen">
+    <header data-role="header" style="display:none;">
+        <div data-role="navbar" class="header-text insideHeader" style="background-image:linear-gradient(to right, rgb(246, 163, 38) 0%, rgb(246, 163, 38) 100%);">
+            <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button" onclick="overlayMenu('homeScreen');"></a>
+        </div>
+    </header>
+
+    <!-- START_CUSTOM_CODE_prestamoView -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+        <div class="grid insideGrid" id="tarjetasGrid">
+
+            <div class="row headerView" style="border-bottom:1px solid #b1b1b1;">
+                <div class="col-xs-2 tal">
+                    <a data-role="button" href="#appDrawer" on-tap="menuP();" onclick="" data-rel="drawer" data-align="left" data-icon="drawer-button">
+                        <img class="menuHamburgesa" src="images/menu/icono_hamburguesa.png" width="30" height="30" alt="" />
+                    </a>
+                </div>
+                <div class="col-xs-10 tac">
+                    <img class="logoStGeorgeMenu" src="images/logos/Logo_color.png" alt="Logo St. George" onclick="gotoMenu();"/>
+                </div>
+            </div>
+
+            <div class="col-xs-12 tawc" style="border:1px solid #b1b1b1;padding:10px 0px;">
+                <h2 class="nombreSeleccion">Préstamos</h2>
+            </div>
+
+            <div id="detalleTarjetas" style="margin-top:20px;">
+
+                <div class="row cuentaRow">
+                    <div class="col-xs-12 tac tarjetaDiv" id="cuentaRowpt1">
+                        <div class="col-xs-12" style="padding:0px;" onclick="showDetail2('pt1');">
+                            <div class="col-xs-12" style="border-bottom:1px solid #c1c1c1;padding-bottom:5px;margin-bottom:5px;padding-top:5px;background-color:#efefef;">
+                                <span style="font-weight:bold;color:#333;float:left;">NOMBRE PRODUCTO</span>
+                                <span style="float:right;font-weight:bold;color:#006838;">1277 8357</span>
+                            </div>
+                            <div class="col-xs-6 tal" style="padding-right:0px;border-right:1px solid #adadad;">
+                                <span style="color:#ababab;">Saldo</span><br/>$824.11
+                            </div>
+                            <div class="col-xs-6 tar" style="padding-left:0px;">
+                                <span style="color:#ababab;">Cuota</span><br/>$127.11
+                            </div>
+                            <div class="col-xs-12 tac" style="margin-top:5px;">
+                                <div style="cursor:pointer;">
+                                <image class="flecha" style="cursor:pointer;width:21px;margin-top:-10px;" src=images/icons/flecha.png /></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detalleTarjeta" id="pt1" style="display:none;">
+
+                        <div class="compras col-xs-12 tac" style="margin-top:5px;padding:15px 0px;">
+                            <div class="col-xs-12 tac">
+                                <span style="font-weight:bold;font-size:15px;color:#868686;">FECHA :</span>
+                                <span>06 FEB 2018</span><br/>
+                            </div>
+                            <div class="col-xs-12 tac" style="">
+                                <input class="botones cuentasBtns botonespt1" type="button" id="commonBtn" style="float:none;" value="PAGAR PRESTAMO">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row cuentaRow">
+                    <div class="col-xs-12 tac tarjetaDiv" id="cuentaRowpt2">
+                        <div class="col-xs-12" style="padding:0px;" onclick="showDetail2('pt2');">
+                            <div class="col-xs-12" style="border-bottom:1px solid #c1c1c1;padding-bottom:5px;margin-bottom:5px;padding-top:5px;background-color:#efefef;">
+                                <span style="font-weight:bold;color:#333;float:left;">NOMBRE PRODUCTO</span>
+                                <span style="float:right;font-weight:bold;color:#006838;">6677 5557</span>
+                            </div>
+                            <div class="col-xs-6 tal" style="padding-right:0px;border-right:1px solid #adadad;">
+                                <span style="color:#ababab;">Saldo</span><br/>$322.10
+                            </div>
+                            <div class="col-xs-6 tar" style="padding-left:0px;">
+                                <input class="botones botonespt2" type="button" id="commonBtn" value="PAGAR PRESTAMO" style="margin:0px;float:right;margin-top:5px;border-radius: 2px;padding: 0px 5px;">
+                            </div>
+                            <div class="col-xs-12 tar" style="margin-top:5px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detalleTarjeta" id="pt2" style="display:none;">
+
+                        <div class="compras col-xs-12">
+                            <div class="col-xs-7 tal" style="">
+                                <span style="font-weight:bold;font-size:15px;color:#868686;">CUOTA</span><br/><br/>
+                                <span style="font-weight:bold;font-size:14px;">$121.02</span><br/>
+                            </div>
+                            <div class="col-xs-5 tar">
+                                <span style="font-weight:bold;font-size:15px;color:#868686;">FECHA</span><br/><br/>
+                                <span>06 ENE 2018</span><br/>
+                            </div>
+                            <div class="col-xs-12 tac" style="padding:10px;"><hr style="margin:0px;border-top:1px solid #e8e8e8;"/></div>
+                            <div class="col-xs-12 tac" style="">
+                                <span style="margin:0px;font-size:15px;color:#006838;font-weight:bold;">MONTO A PAGAR $232342</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row cuentaRow">
+                    <div class="col-xs-12 tac tarjetaDiv" id="cuentaRowpt3">
+                        <div class="col-xs-12" style="padding:0px;" onclick="showDetail2('pt3');">
+                            <div class="col-xs-12" style="border-bottom:1px solid #c1c1c1;padding-bottom:5px;margin-bottom:5px;padding-top:5px;background-color:#efefef;">
+                                <span style="font-weight:bold;color:#333;float:left;">NOMBRE PRODUCTO</span>
+                                <span style="float:right;font-weight:bold;color:#006838;">5432 1987</span>
+                            </div>
+                            <div class="col-xs-6 tal" style="padding-right:0px;border-right:1px solid #adadad;">
+                                <span style="color:#ababab;">Saldo</span><br/>$3322.99
+                            </div>
+                            <div class="col-xs-6 tar" style="padding-left:0px;">
+                                <input class="botones botonespt2" type="button" id="commonBtn" value="PAGAR PRESTAMO" style="margin:0px;float:right;margin-top:5px;border-radius: 2px;padding: 0px 5px;">
+                            </div>
+                            <div class="col-xs-12 tar" style="margin-top:5px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detalleTarjeta" id="pt3" style="display:none;">
+
+                        <div class="compras col-xs-12">
+                            <div class="col-xs-7 tal" style="">
+                                <span style="font-weight:bold;font-size:15px;color:#868686;">CUOTA</span><br/><br/>
+                                <span style="font-weight:bold;font-size:14px;">$2281.12</span><br/>
+                            </div>
+                            <div class="col-xs-5 tar">
+                                <span style="font-weight:bold;font-size:15px;color:#868686;">FECHA</span><br/><br/>
+                                <span>06 FEB 2018</span><br/>
+                            </div>
+                            <div class="col-xs-12 tac" style="padding:10px;"><hr style="margin:0px;border-top:1px solid #e8e8e8;"/></div>
+                            <div class="col-xs-12 tac" style="">
+                                <span style="margin:0px;font-size:15px;color:#006838;font-weight:bold;">MONTO A PAGAR $232342</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    <!-- END_CUSTOM_CODE_prestamoView -->
+</div>

@@ -10,17 +10,14 @@
         <div class="grid insideGrid">
 
             <div class="row headerView">
-                <div class="col-xs-2 tal">
-                    <a href="javascript:goto('components/loginView/view.html')"><img class="back2" src="images/icons/replyG.png" /></a>
-                </div>
-                <div class="col-xs-10 tac">
+                <div class="col-xs-12 tac">
                     <img class="logoStGeorgeMenu" src="images/logos/Logo_color.png" alt="Logo St. George"/>
                 </div>
             </div>
 
             <div style="margin-top:0px;">
                 <div class="col-xs-12 tawc" style="border:1px solid #b1b1b1;padding:10px 0px;">
-                    <h2 class="nombreSeleccion">Reestablecer contraseña</h2>
+                    <h2 class="nombreSeleccion">Cambio de contraseña</h2>
                 </div>
                 <div class="col-xs-12 tal" style="margin-top:20px;">
                     <h1 class="fecha" style="color:#006838;">Nueva contraseña</h1>
@@ -34,21 +31,17 @@
                     <h1 class="fecha" style="color:#006838;">Duración</h1>
                 </div>
                 <div class="col-xs-12 tac" style="margin-top:10px;">
-                    <div class="col-xs-4 tac">
-                        <input type="radio" name="duracion" />
-                        <h1 class="fecha" style="color:#006838;">30d</h1>
-                    </div>
-                    <div class="col-xs-4 tac">
-                        <input type="radio" name="duracion" />
-                        <h1 class="fecha" style="color:#006838;">60d</h1>
-                    </div>
-                    <div class="col-xs-4 tac">
-                        <input type="radio" name="duracion" />
-                        <h1 class="fecha" style="color:#006838;">90d</h1>
-                    </div>
+                    <select name="seleccionTransferencia" style="width:100%;margin-bottom:10px;height:40px;font-size:1.2em;">
+                        <option value="">60 días</option>
+                        <option>90 días</option>
+                        <option>120 días</option>
+                        <option>180 días</option>
+                        <option>360 días</option>
+                    </select>
                 </div>
                 <div class="col-xs-12 tac" style="margin-top:25px;">
                     <input class="botones" type="button" id="commonBtn" onclick="reestablecer();" value="REESTABLECER" style="padding:5px 20px;">
+                    <input class="botones" type="button" id="commonBtn" onclick="goto('components/loginView/view.html')" value="CANCELAR" style="padding:5px 20px;min-width:133px;">
                 </div>
             </div>
 

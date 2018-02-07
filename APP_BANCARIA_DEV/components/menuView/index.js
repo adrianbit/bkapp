@@ -1,8 +1,12 @@
 'use strict';
 
 app.menuView = kendo.observable({
-    onShow: function() { cssMenu(); animateMenu(); },
-    afterShow: function() {  }
+    onShow: function() {
+         cssMenu(); animateMenu();
+         $("#footerMenuPrincipal").hide();
+         
+    },
+    afterShow: function() { setTimeout(function(){ $("#footerMenuPrincipal").show(''); }, 1000); }
 });
 app.localization.registerView('menuView');
 

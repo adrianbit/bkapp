@@ -11,40 +11,21 @@
 
             <div class="col-xs-12 tac fondoTransaccion">
 
-                <img id="boton_exito" src="images/icons/boton_advertencia.png" width="150" height="150" alt="" />
+                <h1>Su instrucción con los siguientes datos ha sido recibida.</h1>
 
-                <h2>Transacción cancelada</h2>
-                <h1>Inténtelo más tarde</h1>
-
-                <div class="col-xs-6 tac transaccionDetalle">
-
-                    <h1>Fecha</h1>
-                    <h2>20 Octubre, 2017</h2>
-
-                    <h1>Para</h1>
-                    <h2>Juana Vega</h2>
-                    <p>juana.vega@mail.com</p>
-
-                    <h1>Cantidad</h1>
-                    <h2>$2,500.00</h2>
-                </div>
-
-                <div class="col-xs-6 tac transaccionDetalle">
-                    <h1>Hora</h1>
-                    <h2>02:45 PM</h2>
-                    <div class="cuadroBeneficiario">
-                        <img src="images/otros/cuadroBeneficiariocuatro.png" width="150" height="150" alt="" />
-                    </div>
-                </div>
-
-                <div class="col-xs-12 tac">
-                </div>
                 <div class="col-xs-12 tac transaccionDetalle">
-                    <div class="tarjeta_transaccion">
-                        <img class="mastercard_transaccion" src="images/icons/mastercard.png" width="100" height="50" alt="" />
-                        <h1>Tarjeta Débito</h1>
-                        <h2>Master Card **43</h2>
-                    </div>
+                    <h1>Fecha y Hora de Registro de la Transacción</h1>
+                    <h2>20 Octubre 2017 07:57:91AM</h2>
+                    <h1>Débito a la cuenta</h1>
+                    <h2>12918287187278</h2>
+                    <h1>Crédito a la cuenta</h1>
+                    <h2>96172876126377</h2>
+                    <h1>Monto en cifras ($US)</h1>
+                    <h2>$1298.17</h2>
+                    <h1>Monto en letras ($US)</h1>
+                    <h2>MIL DOLARES CON 00/100 CTS</h2>
+                    <h1>Propósito del crédito</h1>
+                    <h2>.........</h2>
                 </div>
             </div>
             <img id="boton_cerrartransaccion" src="images/icons/boton_cerrar.png" onclick="cerrarTransferirRespuesta();" width="150" height="150" alt="" />
@@ -52,9 +33,9 @@
         
         <div class="grid insideGrid" id="transferenciasGrid">
 
-            <div class="row" style="margin-top:20px;">
+            <div class="row headerView" style="border-bottom:1px solid #b1b1b1;">
                 <div class="col-xs-2 tal">
-                    <a data-role="button" href="#appDrawer" onclick="menuP();" data-rel="drawer" data-align="left" data-icon="drawer-button">
+                    <a data-role="button" href="#appDrawer" on-tap="menuP();" onclick="" data-rel="drawer" data-align="left" data-icon="drawer-button">
                         <img class="menuHamburgesa" src="images/menu/icono_hamburguesa.png" width="30" height="30" alt="" />
                     </a>
                 </div>
@@ -63,88 +44,162 @@
                 </div>
             </div>
 
-            <div id="" style="margin-top:20px;">
-                <div class="col-xs-12 tawc">
-                    <h2 class="nombreSeleccion">Transferencias</h2>
-                </div>
+            <div class="col-xs-12 tawc" style="border:1px solid #b1b1b1;padding:10px 0px;">
+                <h2 class="nombreSeleccion">Transferencias</h2>
+            </div>
 
-                <div class="tac formulario">
-                    <div class="row">
-                        <div class="col-xs-3">
-                            <p class="alineacion">De:</p>
-                        </div>
-                        <div class="col-xs-9">
-                            <select name="seleccionTransferencia">
-                                <option value="">Selecciona una cuenta o tarjeta</option>
-                                <option>1234 **** **** **56</option>
-                                <option>7847 **** **** **98</option>
-                                <option>3489 **** **** **43</option>
-                                <option>9326 **** **** **23</option>
-                                <option>6534 **** **** **34</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-3">
-                            <p class="alineacion">Para:</p>
-                        </div>
-                        <div class="col-xs-9 tal">
-                            <label> <input type="radio" name="tipoCuenta" value="Cuenta Personal"> Cuenta personal</label>
-                            <label> <input type="radio" name="tipoCuenta" value="Otra cuenta"> Otra cuenta</label>
-                        </div>
-                    </div>
-                </div>
+            <div class="movimientosBancarios2 col-xs-12">
+                <div class="col-xs-4" onclick="terceros()"><div class="tiempos" id="btnTercero" style="font-size:17px;font-weight:bold;">TERCEROS</div></div>
+                <div class="col-xs-4" onclick="propia()"><div class="tiempos active" id="btnPropia" style="font-size:17px;font-weight:bold;">PROPIAS</div></div>
+                <div class="col-xs-4" onclick="ach()"><div class="tiempos" id="btnAch" style="font-size:17px;font-weight:bold;">ACH</div></div>
+            </div>
 
-                <div class="tac formulario">
-                    <div class="row">
-                        <div class="col-xs-4 tal">
-                            <p class="alineacion">Cuenta:</p>
-                        </div>
-                        <div class="col-xs-8 tac">
-                            <select name="seleccionTransferencia">
-                                <option value="">Selecciona una cuenta</option>
-                                <option>1234 **** **** **56</option>
-                                <option>7847 **** **** **98</option>
-                                <option>3489 **** **** **43</option>
-                                <option>9326 **** **** **23</option>
-                                <option>6534 **** **** **34</option>
-                            </select>
-                        </div>
-                    </div>
+            <div class="col-xs-12 formulario" id="formAch" style="display:none;margin-top:30px;border-top:1px solid #c9c9c9;">
+                <div class="col-xs-12 tal" style="">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Favoritos:</h1>
+                    <select name="seleccionTransferencia" style="width:100%;">
+                        <option value="">Selecciona un favorito..</option>
+                        <option>Favorito no 2</option>
+                        <option>Favorito no 3</option>
+                    </select>
                 </div>
-
-                <div class="tac formulario">
-                    <div class="row">
-                        <div class="col-xs-4 tal">
-                            <p class="alineacion">Importe:</p>
-                        </div>
-                        <div class="col-xs-8 tac">
-                            <input class="importe" type="number" name="importe" value="" placeholder="(Ingresa el importe)">
-                        </div>
-                    </div>
+                <div class="col-xs-12 tal" style="margin-top:10px;">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Tipo de operación:</h1>
+                    <select name="seleccionTransferencia" style="width:100%;">
+                        <option value="">Crédito a cuenta corriente</option>
+                        <option>Ahorro</option>
+                        <option>Préstamo</option>
+                        <option>Tarjeta</option>
+                    </select>
                 </div>
-
-                <div class="col-xs-12 tac formulario">
-                    <h1 class="fecha">Programar a fecha futura</h1>
-                    <form>
-                        <p>
-                            Fecha: <input type="date" class="fechayhora">
-                        </p>
-
-                        <p>
-                            Hora: <input type="time" class="fechayhora">
-                        </p>
-                    </form>
+                <div class="col-xs-12 tal" style="margin-top:10px;">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Cuenta a debitar:</h1>
+                    <select name="seleccionTransferencia" style="width:100%;">
+                        <option value="">Selecciona una cuenta o tarjeta</option>
+                        <option>1234 **** **** **56</option>
+                        <option>7847 **** **** **98</option>
+                        <option>3489 **** **** **43</option>
+                        <option>9326 **** **** **23</option>
+                        <option>6534 **** **** **34</option>
+                    </select>
                 </div>
-
-                <div class="col-xs-12 tac formulario">
-                    <div class="col-xs-6 tac">
-                        <input class="botones" type="button" value="CANCELAR" onclick="gotoMenu();">
-                    </div>
-                    <div class="col-xs-6 tac">
-                        <input class="botones" type="button" id="transferirBtn" onclick="transferir();" value="ACEPTAR">
-                    </div>
+                <div class="col-xs-12 tal" style="margin-top:10px;">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Banco destino:</h1>
+                    <select name="seleccionTransferencia" style="width:100%;">
+                        <option value="">St. George Bank</option>
+                        <option>Banco General</option>
+                        <option>Banco Pichincha</option>
+                    </select>
                 </div>
+                <div class="col-xs-12 tal" style="margin-top:10px;">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Cuenta destino:</h1>
+                    <input type="text" placeholder="" class="inputContacto" style="color: #afafaf;padding:5px 15px;"/>
+                </div>
+                <div class="col-xs-12 tal" style="margin-top:10px;">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Beneficiario:</h1>
+                    <input type="text" placeholder="" class="inputContacto" style="color: #afafaf;padding:5px 15px;"/>
+                </div>
+                <div class="col-xs-12 tal" style="margin-top:10px;">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Monto a transferir:</h1>
+                    <input type="number" placeholder="" class="inputContacto" style="color: #afafaf;padding:5px 15px;"/>
+                </div>
+                <div class="col-xs-12 tal" style="margin-top:10px;">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Propósito:</h1>
+                    <input type="text" placeholder="" class="inputContacto" style="color: #afafaf;padding:5px 15px;"/>
+                </div>
+                <div class="col-xs-12 tal" style="margin-top:10px;">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Correo beneficiario:</h1>
+                    <input type="text" placeholder="" class="inputContacto" style="color: #afafaf;padding:5px 15px;"/>
+                </div>
+                <div class="col-xs-12 tac" style="margin-top:20px;">
+                    <input class="botones" type="button" id="transferirBtn" onclick="transferir();" value="REALIZAR TRANSFERENCIA">
+                </div>
+                
+            </div>
+            <div class="col-xs-12 formulario" id="formTercero" style="display:none;margin-top:30px;border-top:1px solid #c9c9c9;">
+                <div class="col-xs-12 tal" style="">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Favoritos:</h1>
+                    <select name="seleccionTransferencia" style="width:100%;">
+                        <option value="">Selecciona un favorito..</option>
+                        <option>Favorito no 2</option>
+                        <option>Favorito no 3</option>
+                    </select>
+                </div>
+                <div class="col-xs-12 tal" style="margin-top:10px;">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Tipo de operación:</h1>
+                    <select name="seleccionTransferencia" style="width:100%;">
+                        <option value="">Crédito a cuenta</option>
+                        <option>Pago a préstamo</option>
+                        <option>Tarjeta de Crédito</option>
+                    </select>
+                </div>
+                <div class="col-xs-12 tal" style="margin-top:10px;">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Cuenta a debitar:</h1>
+                    <select name="seleccionTransferencia" style="width:100%;">
+                        <option value="">Selecciona una cuenta o tarjeta</option>
+                        <option>1234 **** **** **56</option>
+                        <option>7847 **** **** **98</option>
+                        <option>3489 **** **** **43</option>
+                        <option>9326 **** **** **23</option>
+                        <option>6534 **** **** **34</option>
+                    </select>
+                </div>
+                <div class="col-xs-12 tal" style="margin-top:10px;">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Cuenta destino:</h1>
+                    <input type="text" placeholder="" class="inputContacto" style="color: #afafaf;padding:5px 15px;"/>
+                </div>
+                <div class="col-xs-12 tal" style="margin-top:10px;">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Beneficiario:</h1>
+                    <input type="text" placeholder="" class="inputContacto" style="color: #afafaf;padding:5px 15px;"/>
+                </div>
+                <div class="col-xs-12 tal" style="margin-top:10px;">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Monto a transferir:</h1>
+                    <input type="number" placeholder="" class="inputContacto" style="color: #afafaf;padding:5px 15px;"/>
+                </div>
+                <div class="col-xs-12 tal" style="margin-top:10px;">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Propósito:</h1>
+                    <input type="text" placeholder="" class="inputContacto" style="color: #afafaf;padding:5px 15px;"/>
+                </div>
+                <div class="col-xs-12 tac" style="margin-top:20px;">
+                    <input class="botones" type="button" id="transferirBtn" onclick="transferir();" value="REALIZAR TRANSFERENCIA">
+                </div>
+                
+            </div>
+            <div class="col-xs-12 formulario" id="formPropia" style="margin-top:30px;border-top:1px solid #c9c9c9;">
+                <div class="col-xs-12 tal" style="">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Cuenta a debitar:</h1>
+                    <select name="seleccionTransferencia" style="width:100%;">
+                        <option value="">Selecciona una cuenta o tarjeta</option>
+                        <option>1234 **** **** **56</option>
+                        <option>7847 **** **** **98</option>
+                        <option>3489 **** **** **43</option>
+                        <option>9326 **** **** **23</option>
+                        <option>6534 **** **** **34</option>
+                    </select>
+                </div>
+                <div class="col-xs-12 tal" style="margin-top:10px;">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Cuenta destino:</h1>
+                    <select name="seleccionTransferencia" style="width:100%;">
+                        <option value="">Selecciona una cuenta o tarjeta</option>
+                        <option>1234 **** **** **56</option>
+                        <option>7847 **** **** **98</option>
+                        <option>3489 **** **** **43</option>
+                        <option>9326 **** **** **23</option>
+                        <option>6534 **** **** **34</option>
+                    </select>
+                </div>
+                <div class="col-xs-12 tal" style="margin-top:10px;">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Monto a transferir:</h1>
+                    <input type="number" placeholder="" class="inputContacto" style="color: #afafaf;padding:5px 15px;"/>
+                </div>
+                <div class="col-xs-12 tal" style="margin-top:10px;">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Propósito:</h1>
+                    <input type="text" placeholder="" class="inputContacto" style="color: #afafaf;padding:5px 15px;"/>
+                </div>
+                <div class="col-xs-12 tac" style="margin-top:20px;">
+                    <input class="botones" type="button" id="transferirBtn" onclick="transferir();" value="REALIZAR TRANSFERENCIA">
+                </div>
+                
             </div>
         </div>
     <!-- END_CUSTOM_CODE_transferenciasView -->

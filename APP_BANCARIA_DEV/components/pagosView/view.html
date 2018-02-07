@@ -7,54 +7,11 @@
 
     <!-- START_CUSTOM_CODE_pagosView -->
     <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
-        <div class="grid insideGrid transaccionExitosa" id="pagoResponse" style="display:none;overflow-x:hidden;">
+        <div class="grid insideGrid" id="transferenciasGrid">
 
-            <div class="col-xs-12 tac fondoTransaccion">
-
-                <img id="boton_exito" src="images/icons/boton_exito.png" width="150" height="150" alt="" />
-
-                <h2>Gracias</h2>
-                <h1>Transacción exitosa</h1>
-
-                <div class="col-xs-6 tac transaccionDetalle">
-
-                    <h1>Fecha</h1>
-                    <h2>20 Octubre, 2017</h2>
-
-                    <h1>Para</h1>
-                    <h2>Juana Vega</h2>
-                    <p>juana.vega@mail.com</p>
-
-                    <h1>Cantidad</h1>
-                    <h2>$2,500.00</h2>
-                </div>
-
-                <div class="col-xs-6 tac transaccionDetalle">
-                    <h1>Hora</h1>
-                    <h2>02:45 PM</h2>
-                    <div class="cuadroBeneficiario">
-                        <img src="images/otros/cuadroBeneficiario.png" width="150" height="150" alt="" />
-                    </div>
-                </div>
-
-                <div class="col-xs-12 tac">
-                </div>
-                <div class="col-xs-12 tac transaccionDetalle">
-                    <div class="tarjeta_transaccion">
-                        <img class="mastercard_transaccion" src="images/icons/mastercard.png" width="100" height="50" alt="" />
-                        <h1>Tarjeta Débito</h1>
-                        <h2>Master Card **43</h2>
-                    </div>
-                </div>
-            </div>
-            <img id="boton_cerrartransaccion" src="images/icons/boton_cerrar.png" onclick="cerrarPagoRespuesta();" width="150" height="150" alt="" />
-        </div>
-        
-        <div class="grid insideGrid" id="pagosGrid">
-
-            <div class="row" style="margin-top:20px;">
+            <div class="row headerView" style="border-bottom:1px solid #b1b1b1;">
                 <div class="col-xs-2 tal">
-                    <a data-role="button" href="#appDrawer" onclick="menuP();" data-rel="drawer" data-align="left" data-icon="drawer-button">
+                    <a data-role="button" href="#appDrawer" on-tap="menuP();" onclick="" data-rel="drawer" data-align="left" data-icon="drawer-button">
                         <img class="menuHamburgesa" src="images/menu/icono_hamburguesa.png" width="30" height="30" alt="" />
                     </a>
                 </div>
@@ -63,50 +20,113 @@
                 </div>
             </div>
 
-            <div id="" style="margin-top:20px;">
+            <div class="col-xs-12 tawc nombreSeleccionDiv">
+                <h2 class="nombreSeleccion">Pagos</h2>
+            </div>
 
-                <div class="col-xs-12 tac cuentaDos cuenta_opcion">
-                    <h1>1234 **** **** **57</h1>
-                    <img class="card" src="images/otros/tarjeta-ST-George2.png" />
-                    <img class="cardSlide" src="images/otros/tarjeta-ST-George2.png" />
+            <div class="movimientosBancarios2 col-xs-12">
+                <div class="col-xs-4" onclick="prestamo()"><div class="tiempos" id="btnPrestamo" style="font-size:17px;font-weight:bold;">PRÉSTAMO</div></div>
+                <div class="col-xs-4" onclick="credito()"><div class="tiempos active" id="btnCredito" style="font-size:17px;font-weight:bold;">CRÉDITO</div></div>
+                <div class="col-xs-4" onclick="servicios()"><div class="tiempos" id="btnServicios" style="font-size:17px;font-weight:bold;">SERVICIOS</div></div>
+            </div>
+    
+            <div class="col-xs-12 formulario" id="formPrestamoCredito" style="margin-top:30px;border-top:1px solid #c9c9c9;">
+                <div class="col-xs-12 tal" style="">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Favoritos:</h1>
+                    <select name="seleccionTransferencia" style="width:100%;">
+                        <option value="">Selecciona un favorito..</option>
+                        <option>Favorito no 2</option>
+                        <option>Favorito no 3</option>
+                    </select>
                 </div>
-
-                <div class="col-xs-12 tac detallesTransaccion">
-                    <h1>Selecciona al beneficiario</h1>
-                    <div class="col-xs-3 menuBeneficiario">
-                        <div id="anadirBeneficiario">Añadir nueva cuenta</div>
-                    </div>
-                    <div class="col-xs-3 menuBeneficiario">
-                        <img src="images/otros/cuadroBeneficiario.png" width="150" height="150" alt="" />
-                    </div>
-                    <div class="col-xs-3 menuBeneficiario">
-                        <img src="images/otros/cuadroBeneficiariocuatro.png" width="150" height="150" alt="" />
-                    </div>
-                    <div class="col-xs-3 menuBeneficiario">
-                        <img src="images/otros/cuadroBeneficiariodos.png" width="150" height="150" alt="" />
-                    </div>
+                <div class="col-xs-12 tal" style="margin-top:10px;">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Cuenta a debitar:</h1>
+                    <select name="seleccionTransferencia" style="width:100%;">
+                        <option value="">Selecciona una cuenta o tarjeta</option>
+                        <option>1234 **** **** **56</option>
+                        <option>7847 **** **** **98</option>
+                        <option>3489 **** **** **43</option>
+                        <option>9326 **** **** **23</option>
+                        <option>6534 **** **** **34</option>
+                    </select>
                 </div>
-
-                <div class="col-xs-12 tac">
-                    <div class="formularioTransaccion formt">
-                        <label> Cantidad:</label><br><input type="text" value="" placeholder="Ingrese la cantidad">
-                    </div>
+                <div class="col-xs-12 tal" style="margin-top:10px;">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Cuenta destino:</h1>
+                    <select name="seleccionTransferencia" style="width:100%;">
+                        <option value="">Selecciona una cuenta o tarjeta</option>
+                        <option>1234 **** **** **56</option>
+                        <option>7847 **** **** **98</option>
+                        <option>3489 **** **** **43</option>
+                        <option>9326 **** **** **23</option>
+                        <option>6534 **** **** **34</option>
+                    </select>
                 </div>
-
-                <div class="col-xs-12 tac">
-                    <div class="formularioTransaccion formt">
-                        <label> Descripción:</label><br> 
-                        <select>
-                                <option value="">Elige una opción</option>
-                                <option>Transferencia Privada</option>
-                                <option>Pago de Servicios</option>
-                                <option>Otro</option>
-                        </select>
-                    </div>
+                <div class="col-xs-12 tal" style="margin-top:10px;">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Fecha de pago:</h1>
+                    <input type="date" placeholder="" class="inputContacto" style="color: #afafaf;padding:5px 15px;"/>
                 </div>
-
-                <div class="col-xs-12 tac">
-                    <input class="commonBtn" id="pagarBtn" type="button" onclick="pagar();" value="REALIZAR PAGO">
+                <div class="col-xs-12 tal" style="margin-top:10px;">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Pago mínimo:</h1>
+                    <input type="number" placeholder="" class="inputContacto" style="color: #afafaf;padding:5px 15px;"/>
+                </div>
+                <div class="col-xs-12 tal" style="margin-top:10px;">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Monto a pagar:</h1>
+                    <input type="number" placeholder="" class="inputContacto" style="color: #afafaf;padding:5px 15px;"/>
+                </div>
+                <div class="col-xs-12 tac" style="margin-top:20px;">
+                    <input class="botones" type="button" id="transferirBtn" onclick="transferir();" value="REALIZAR PAGO">
+                </div>
+            </div>
+            <div class="col-xs-12 formulario" id="formServicios" style="display:none;margin-top:30px;border-top:1px solid #c9c9c9;">
+                <div class="col-xs-12 tal" style="">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Favoritos:</h1>
+                    <select name="seleccionTransferencia" style="width:100%;">
+                        <option value="">Selecciona un favorito..</option>
+                        <option>Favorito no 2</option>
+                        <option>Favorito no 3</option>
+                    </select>
+                </div>
+                <div class="col-xs-12 tal" style="margin-top:10px;">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Cuenta a debitar:</h1>
+                    <select name="seleccionTransferencia" style="width:100%;">
+                        <option value="">Selecciona una cuenta o tarjeta</option>
+                        <option>1234 **** **** **56</option>
+                        <option>7847 **** **** **98</option>
+                        <option>3489 **** **** **43</option>
+                        <option>9326 **** **** **23</option>
+                        <option>6534 **** **** **34</option>
+                    </select>
+                </div>
+                <div class="col-xs-12 tal" style="margin-top:10px;">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Categoría:</h1>
+                    <select name="seleccionTransferencia" style="width:100%;">
+                        <option value="">Agua</option>
+                        <option>Electricidad</option>
+                        <option>Teléfono</option>
+                    </select>
+                </div>
+                <div class="col-xs-12 tal" style="margin-top:10px;">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Servicio:</h1>
+                    <select name="seleccionTransferencia" style="width:100%;">
+                        <option value="">Selecciona un servicio</option>
+                        <option>...</option>
+                        <option>....</option>
+                    </select>
+                </div>
+                <div class="col-xs-12 tal" style="margin-top:10px;">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Cuenta destino:</h1>
+                    <input type="text" placeholder="" class="inputContacto" style="color: #afafaf;padding:5px 15px;"/>
+                </div>
+                <div class="col-xs-12 tal" style="margin-top:10px;">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Descripción:</h1>
+                    <input type="text" placeholder="" class="inputContacto" style="color: #afafaf;padding:5px 15px;"/>
+                </div>
+                <div class="col-xs-12 tal" style="margin-top:10px;">
+                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Monto a pagar:</h1>
+                    <input type="number" placeholder="" class="inputContacto" style="color: #afafaf;padding:5px 15px;"/>
+                </div>
+                <div class="col-xs-12 tac" style="margin-top:20px;">
+                    <input class="botones" type="button" id="transferirBtn" onclick="transferir();" value="REALIZAR PAGO">
                 </div>
             </div>
         </div>

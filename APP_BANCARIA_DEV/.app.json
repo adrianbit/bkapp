@@ -93,6 +93,13 @@
       "components": [],
       "title": "Olvidaste View",
       "addToNavigation": false
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "prestamoView",
+      "components": [],
+      "title": "Prestamo View",
+      "addToNavigation": false
     }
   ],
   "dataProviders": [],
