@@ -46,7 +46,7 @@
                             </div>
                         </div>
                         <div class="col-xs-12 tar" style="padding-right:0px;margin-top:5px;">
-                            <div style="float:left;cursor:pointer;" onclick="showDetail('ct1')"><image class="flecha" style="margin-left:20px;margin-top:-10px;" src=images/icons/flecha.png /></div>
+                            <div style="float:left;cursor:pointer;" onclick="showDetail('ct1')"><image class="flecha" id="flechact1" style="margin-left:20px;margin-top:-10px;" src=images/icons/flecha.png /></div>
                             <div style="float:right;cursor:pointer;" onclick="dotsMenu('ct1')"><img src="images/icons/dots.png" style="width:auto;height:10px;margin-right:15px;"/></div>
                             <input class="botones cuentasBtns botonesct1" type="button" id="commonBtn" value="TRANSFERENCIAS" style="display:none;" onclick="goto('components/transferenciasView/view.html')">
                             <input class="botones cuentasBtns botonesct1" type="button" id="commonBtn" value="PAGOS" style="display:none;" onclick="goto('components/pagosView/view.html')">
@@ -101,7 +101,7 @@
                                 <span>$302.76</span><br/>
                             </div>
 
-                            <div class="col-xs-12 pleca"><image class="flecha" src=images/icons/flecha.png /></div>
+                            <div class="col-xs-12 pleca"><image class="flecha" style="width:21px;" src=images/icons/flecha.png /></div>
 
                         </div>
                     </div>
@@ -127,7 +127,7 @@
                             </div>
                         </div>
                         <div class="col-xs-12 tar" style="padding-right:0px;margin-top:5px;">
-                            <div style="float:left;cursor:pointer;" onclick="showDetail('ct2')"><image class="flecha" style="margin-left:20px;margin-top:-10px;" src=images/icons/flecha.png /></div>
+                            <div style="float:left;cursor:pointer;" onclick="showDetail('ct2')"><image class="flecha" id="flechact2" style="margin-left:20px;margin-top:-10px;" src=images/icons/flecha.png /></div>
                             <div style="float:right;cursor:pointer;" onclick="dotsMenu('ct2')"><img src="images/icons/dots.png" style="width:auto;height:10px;margin-right:15px;"/></div>
                             <input class="botones cuentasBtns botonesct2" type="button" id="commonBtn" value="TRANSFERENCIAS" style="display:none;" onclick="goto('components/transferenciasView/view.html')">
                             <input class="botones cuentasBtns botonesct2" type="button" id="commonBtn" value="PAGOS" style="display:none;" onclick="goto('components/pagosView/view.html')">
@@ -136,13 +136,13 @@
 
                     <div class="detalleTarjeta" id="ct2" style="display:none;">
 
-                        <div class="movimientosBancarios col-xs-12">
+                        <div class="movimientosBancarios3 col-xs-12">
 
-                            <div class="col-xs-3"><div class="tiempos active">10</div></div>
-                            <div class="col-xs-3"><div class="tiempos">20</div></div>
-                            <div class="col-xs-3"><div class="tiempos">30</div></div>
-                            <div class="col-xs-3"><div class="tiempos">40</div></div>
-                            <div class="col-xs-12"><h1 id="movimientos">Movimientos</h1></div>
+                            <div class="col-xs-3"><div class="tiempos2 active">10</div></div>
+                            <div class="col-xs-3"><div class="tiempos2">20</div></div>
+                            <div class="col-xs-3"><div class="tiempos2">30</div></div>
+                            <div class="col-xs-3"><div class="tiempos2">40</div></div>
+                            <div class="col-xs-12"><h1 id="movimientos3">Movimientos</h1></div>
 
                         </div>
 
@@ -164,7 +164,7 @@
                                 <span>$256.87</span><br/>
                             </div>
 
-                            <div class="col-xs-12 pleca"><image class="flecha" src=images/icons/flecha.png /></div>
+                            <div class="col-xs-12 pleca"><image class="flecha" style="width:21px;" src=images/icons/flecha.png /></div>
 
                         </div>
                     </div>
@@ -190,7 +190,7 @@
                             </div>
                         </div>
                         <div class="col-xs-12 tar" style="padding-right:0px;margin-top:5px;">
-                            <div style="float:left;cursor:pointer;" onclick="showDetail('ct3')"><image class="flecha" style="margin-left:20px;margin-top:-10px;" src=images/icons/flecha.png /></div>
+                            <div style="float:left;cursor:pointer;" onclick="showDetail('ct3')"><image class="flecha" id="flechact3" style="margin-left:20px;margin-top:-10px;" src=images/icons/flecha.png /></div>
                             <div style="float:right;cursor:pointer;" onclick="dotsMenu('ct3')"><img src="images/icons/dots.png" style="width:auto;height:10px;margin-right:15px;"/></div>
                             <input class="botones cuentasBtns botonesct3" type="button" id="commonBtn" value="TRANSFERENCIAS" style="display:none;" onclick="goto('components/transferenciasView/view.html')">
                             <input class="botones cuentasBtns botonesct3" type="button" id="commonBtn" value="PAGOS" style="display:none;" onclick="goto('components/pagosView/view.html')">
@@ -199,13 +199,13 @@
 
                     <div class="detalleTarjeta" id="ct3" style="display:none;">
 
-                        <div class="movimientosBancarios col-xs-12">
+                        <div class="movimientosBancarios3 col-xs-12">
 
-                            <div class="col-xs-3"><div class="tiempos active">10</div></div>
-                            <div class="col-xs-3"><div class="tiempos">20</div></div>
-                            <div class="col-xs-3"><div class="tiempos">30</div></div>
-                            <div class="col-xs-3"><div class="tiempos">40</div></div>
-                            <div class="col-xs-12"><h1 id="movimientos">Movimientos</h1></div>
+                            <div class="col-xs-3"><div class="tiempos2 active">10</div></div>
+                            <div class="col-xs-3"><div class="tiempos2">20</div></div>
+                            <div class="col-xs-3"><div class="tiempos2">30</div></div>
+                            <div class="col-xs-3"><div class="tiempos2">40</div></div>
+                            <div class="col-xs-12"><h1 id="movimientos3">Movimientos</h1></div>
 
                         </div>
 
@@ -227,7 +227,7 @@
                                 <span>$256.87</span><br/>
                             </div>
 
-                            <div class="col-xs-12 pleca"><image class="flecha" src=images/icons/flecha.png /></div>
+                            <div class="col-xs-12 pleca"><image class="flecha" style="width:21px;" src=images/icons/flecha.png /></div>
 
                         </div>
                     </div>
@@ -253,7 +253,7 @@
                             </div>
                         </div>
                         <div class="col-xs-12 tar" style="padding-right:0px;margin-top:5px;">
-                            <div style="float:left;cursor:pointer;" onclick="showDetail('ct4')"><image class="flecha" style="margin-left:20px;margin-top:-10px;" src=images/icons/flecha.png /></div>
+                            <div style="float:left;cursor:pointer;" onclick="showDetail('ct4')"><image class="flecha" id="flechact4" style="margin-left:20px;margin-top:-10px;" src=images/icons/flecha.png /></div>
                             <div style="float:right;cursor:pointer;" onclick="dotsMenu('ct4')"><img src="images/icons/dots.png" style="width:auto;height:10px;margin-right:15px;"/></div>
                             <input class="botones cuentasBtns botonesct4" type="button" id="commonBtn" value="TRANSFERENCIAS" style="display:none;" onclick="goto('components/transferenciasView/view.html')">
                             <input class="botones cuentasBtns botonesct4" type="button" id="commonBtn" value="PAGOS" style="display:none;" onclick="goto('components/pagosView/view.html')">
@@ -262,13 +262,13 @@
 
                     <div class="detalleTarjeta" id="ct4" style="display:none;">
 
-                        <div class="movimientosBancarios col-xs-12">
+                        <div class="movimientosBancarios3 col-xs-12">
 
-                            <div class="col-xs-3"><div class="tiempos active">10</div></div>
-                            <div class="col-xs-3"><div class="tiempos">20</div></div>
-                            <div class="col-xs-3"><div class="tiempos">30</div></div>
-                            <div class="col-xs-3"><div class="tiempos">40</div></div>
-                            <div class="col-xs-12"><h1 id="movimientos">Movimientos</h1></div>
+                            <div class="col-xs-3"><div class="tiempos2 active">10</div></div>
+                            <div class="col-xs-3"><div class="tiempos2">20</div></div>
+                            <div class="col-xs-3"><div class="tiempos2">30</div></div>
+                            <div class="col-xs-3"><div class="tiempos2">40</div></div>
+                            <div class="col-xs-12"><h1 id="movimientos3">Movimientos</h1></div>
 
                         </div>
 
@@ -290,7 +290,7 @@
                                 <span>$256.87</span><br/>
                             </div>
 
-                            <div class="col-xs-12 pleca"><image class="flecha" src=images/icons/flecha.png /></div>
+                            <div class="col-xs-12 pleca"><image class="flecha" style="width:21px;" src=images/icons/flecha.png /></div>
 
                         </div>
                     </div>

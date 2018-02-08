@@ -1,4 +1,4 @@
-<div style="position:fixed; data-role="view" data-title="View" data-layout="main-nonav" data-model="app.olvidasteView" data-show="app.olvidasteView.onShow" data-after-show="app.olvidasteView.afterShow" id="olvidasteViewScreen" class="screen">
+<div style="position:fixed;" data-role="view" data-title="View" data-layout="main-nonav" data-model="app.olvidasteView" data-show="app.olvidasteView.onShow" data-after-show="app.olvidasteView.afterShow" id="olvidasteViewScreen" class="screen">
     <header data-role="header" style="display:none;">
         <div data-role="navbar" class="header-text" style="background-image:linear-gradient(to right, #f6a426 0%, #ff8a00 100%);">
             <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
@@ -16,16 +16,16 @@
             </div>
 
             <div style="margin-top:0px;">
-                <div class="col-xs-12 tawc" style="border:1px solid #b1b1b1;padding:10px 0px;">
+                <div class="col-xs-12 tawc nombreSeleccionDiv">
                     <h2 class="nombreSeleccion">Cambio de contraseña</h2>
                 </div>
                 <div class="col-xs-12 tal" style="margin-top:20px;">
                     <h1 class="fecha" style="color:#006838;">Nueva contraseña</h1>
-                    <input type="text" placeholder="" class="inputContacto" style="color: #afafaf;padding:5px 15px;"/>
+                    <input type="password" placeholder="" class="inputContacto" style="color: #afafaf;padding:5px 15px;"/>
                 </div>
                 <div class="col-xs-12 tal" style="margin-top:20px;">
                     <h1 class="fecha" style="color:#006838;">Confirmar contraseña</h1>
-                    <input type="text" placeholder="" class="inputContacto" style="color: #afafaf;padding:5px 15px;"/>
+                    <input type="password" placeholder="" class="inputContacto" style="color: #afafaf;padding:5px 15px;"/>
                 </div>
                 <div class="col-xs-12 tal" style="margin-top:20px;">
                     <h1 class="fecha" style="color:#006838;">Duración</h1>
@@ -40,8 +40,8 @@
                     </select>
                 </div>
                 <div class="col-xs-12 tac" style="margin-top:25px;">
-                    <input class="botones" type="button" id="commonBtn" onclick="reestablecer();" value="REESTABLECER" style="padding:5px 20px;">
-                    <input class="botones" type="button" id="commonBtn" onclick="goto('components/loginView/view.html')" value="CANCELAR" style="padding:5px 20px;min-width:133px;">
+                    <input class="botones" type="button" id="commonBtn" onclick="reestablecer();" value="REESTABLECER" style="padding:5px 10px;">
+                    <input class="botones" type="button" id="commonBtn" onclick="goto('components/loginView/view.html')" value="CANCELAR" style="padding:5px 10px;min-width:113px;">
                 </div>
             </div>
 

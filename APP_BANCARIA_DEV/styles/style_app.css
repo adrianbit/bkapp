@@ -86,7 +86,7 @@ body{
 
 .botonIngresar{
 	width: 100%;
-	height: 220px;
+	height: 250px;
 	/**background-color: #00693E;*/
 	position: absolute; 
 	bottom:-5px;
@@ -612,11 +612,18 @@ div{
     padding: 5px 15px;
     width: fit-content;
     border-radius: 5px;
-    color: #006838 !important;
+    color: white !important;
     font-size: 1.4em !important;
     font-weight: bold !important;
     margin-top:10px;
     margin-bottom:15px;
+}
+
+.nombreSeleccionDiv{
+	background-color: #006838 !important;
+    text-transform: uppercase;
+    border:1px solid #b1b1b1;
+    padding:10px 0px;
 }
 
 .principal img{
@@ -1384,4 +1391,8 @@ border-top: rgba(0,0,0,0.1 ) solid;
     border:1px solid #b1b1b1;
     padding:10px 0px;
     background-color:#f1f1f1;
+}
+
+.rotateImg{
+    transform: rotate(180deg);
 }

@@ -10,7 +10,7 @@ app.localization.registerView('prestamoView');
 // Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes
 
 function showDetail2(id){
-    $('#'+id).hideShowCuenta2();
+    $('#'+id).hideShowCuenta2(id);
     $('#'+id).animateCss('fadeInDown');
     $('#cuentaRow'+id).animateCss('pulse');
     return false;
@@ -18,12 +18,14 @@ function showDetail2(id){
 }
 
 $.fn.extend({
-    hideShowCuenta2: function (pre,post) {
+    hideShowCuenta2: function (id,pre,post) {
         if (this.css("display") == "none") {
             $('.detalleTarjeta').hide('');
+            $('#flecha'+id).addClass("rotateImg");
             $(this).show();
         } else {
             $('.detalleTarjeta').hide();
+            $('#flecha'+id).removeClass("rotateImg");
             //$('.detalleTarjeta').animateCss('bounceOutDown', function(){  });
         }
         return this;

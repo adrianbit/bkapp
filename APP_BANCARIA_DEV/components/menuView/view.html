@@ -28,7 +28,7 @@
                 </h3>
             </div>
 
-            <div id="menuPrincipal" style="display:none;margin-top:90px;">
+            <div id="menuPrincipal" style="display:none;margin-top:80px;">
                 <div class="row iconsMenu">
                     <div class="col-xs-1"></div>
                     <div class="col-xs-5 tac">
@@ -52,7 +52,7 @@
                 <div class="row iconsMenu" style="margin-top:10px;">
                     <div class="col-xs-1"></div>
                     <div class="col-xs-5 tac">
-                        <img src="images/menu/icono_solicitarprestamo.png" class="imageMenu1" id="pagosMenu" onclick="selectMenu('components/prestamoView/view.html',this);"/>
+                        <img src="images/menu/icono_pagar.png" class="imageMenu1" id="cuentasMenu" onclick="selectMenu('components/pagosView/view.html',this);"/>
                     </div>
                     <div class="col-xs-5 tac">
                         <img src="images/menu/icono_transferir.png" class="imageMenu1" id="tarjetasMenu" onclick="selectMenu('components/transferenciasView/view.html',this);"/>
@@ -62,15 +62,35 @@
                 <div class="row iconsMenu" style="margin-top:10px;">
                     <div class="col-xs-1"></div>
                     <div class="col-xs-5 tac">
-                        <span class="textMenu">Prestamos</span>
+                        <span class="textMenu">Pagos</span>
                     </div>
                     <div class="col-xs-5 tac">
                         <span class="textMenu">Transferencias</span>
                     </div>
                     <div class="col-xs-1"></div>
                 </div>
-                <div class="col-xs-12 tac botonIngresar" id="footerMenuPrincipal" style="display:none;height:30px;bottom:20px;">
-                    <span style="font-weight:bold;">St. George Bank</span>
+                <div class="row iconsMenu" style="margin-top:10px;">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-5 tac">
+                        <img src="images/menu/icono_solicitarprestamo.png" class="imageMenu1" id="pagosMenu" onclick="selectMenu('components/prestamoView/view.html',this);"/>
+                    </div>
+                    <div class="col-xs-5 tac">
+                        <img src="images/icons/icono_sucursales.png" class="imageMenu1" id="transferenciasMenu" onclick="selectMenu('components/sucursalesView/view.html',this);"/>
+                    </div>
+                    <div class="col-xs-1"></div>
+                </div>
+                <div class="row iconsMenu" style="margin-top:10px;">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-5 tac">
+                        <span class="textMenu">Prestamos</span>
+                    </div>
+                    <div class="col-xs-5 tac">
+                        <span class="textMenu">Sucursales</span>
+                    </div>
+                    <div class="col-xs-1"></div>
+                </div>
+                <div class="col-xs-12 tac botonIngresar" style="height:30px;bottom:20px;">
+                    <span style="font-weight:bold;">St. Georges Bank</span>
                 </div>
             </div>
         </div>

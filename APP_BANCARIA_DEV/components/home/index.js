@@ -2,8 +2,8 @@
 
 app.home = kendo.observable({
     onShow: function() {
-        goto("components/menuView/view.html");
-        //goto("components/transferenciasView/view.html");
+        //goto("components/menuView/view.html");
+        goto("components/olvidasteView/view.html");
         css(); 
         var video = document.getElementById("video-background");
         video.play();
