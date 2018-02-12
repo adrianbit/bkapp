@@ -15,6 +15,7 @@ app.home = kendo.observable({
         }, 2700);
     }
 });
+
 app.localization.registerView('home');
 
 // START_CUSTOM_CODE_home
