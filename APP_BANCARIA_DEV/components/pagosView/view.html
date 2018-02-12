@@ -30,19 +30,17 @@
                 <div class="col-xs-4" onclick="servicios()"><div class="tiempos" id="btnServicios" style="font-size:17px;font-weight:bold;">SERVICIOS</div></div>
             </div>
     
-            <div class="col-xs-12 formulario" id="formPrestamoCredito" style="margin-top:30px;border-top:1px solid #c9c9c9;">
+            <div class="col-xs-12 formularioDiv"  id="formPrestamoCredito" style="margin-top:20px;">
                 <div class="col-xs-12 tal" style="">
-                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Favoritos:</h1>
-                    <select name="seleccionTransferencia" style="width:100%;">
-                        <option value="">Selecciona un favorito..</option>
+                    <select name="seleccionTransferencia" class="selectContacto" style="width:100%;">
+                        <option value="">Favoritos</option>
                         <option>Favorito no 2</option>
                         <option>Favorito no 3</option>
                     </select>
                 </div>
                 <div class="col-xs-12 tal" style="margin-top:10px;">
-                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Cuenta a debitar:</h1>
-                    <select name="seleccionTransferencia" style="width:100%;">
-                        <option value="">Selecciona una cuenta o tarjeta</option>
+                    <select name="seleccionTransferencia" class="selectContacto" style="width:100%;">
+                        <option value="">Cuenta a debitar</option>
                         <option>1234 **** **** **56</option>
                         <option>7847 **** **** **98</option>
                         <option>3489 **** **** **43</option>
@@ -51,9 +49,8 @@
                     </select>
                 </div>
                 <div class="col-xs-12 tal" style="margin-top:10px;">
-                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Cuenta destino:</h1>
-                    <select name="seleccionTransferencia" style="width:100%;">
-                        <option value="">Selecciona una cuenta o tarjeta</option>
+                    <select name="seleccionTransferencia" class="selectContacto" style="width:100%;">
+                        <option value="">Cuenta destino</option>
                         <option>1234 **** **** **56</option>
                         <option>7847 **** **** **98</option>
                         <option>3489 **** **** **43</option>
@@ -62,34 +59,29 @@
                     </select>
                 </div>
                 <div class="col-xs-12 tal" style="margin-top:10px;">
-                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Fecha de pago:</h1>
-                    <input type="date" placeholder="" class="inputContacto" style="color: #afafaf;padding:5px 15px;"/>
+                    <input type="text" value="Fecha de pago" class="inputContacto2"/>
                 </div>
-                <div class="col-xs-12 tal" style="margin-top:10px;">
-                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Pago mínimo:</h1>
-                    <input type="number" placeholder="" class="inputContacto" style="color: #afafaf;padding:5px 15px;"/>
+                <div class="col-xs-12 tal" style="margin-top:20px;">
+                    <input type="text" value="Pago mínimo" class="inputContacto2"/>
                 </div>
-                <div class="col-xs-12 tal" style="margin-top:10px;">
-                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Monto a pagar:</h1>
-                    <input type="number" placeholder="" class="inputContacto" style="color: #afafaf;padding:5px 15px;"/>
+                <div class="col-xs-12 tal" style="margin-top:20px;">
+                    <input type="text" value="Monto a pagar" class="inputContacto2"/>
                 </div>
                 <div class="col-xs-12 tac" style="margin-top:20px;">
                     <input class="botones" type="button" id="transferirBtn" onclick="transferir();" value="REALIZAR PAGO">
                 </div>
             </div>
-            <div class="col-xs-12 formulario" id="formServicios" style="display:none;margin-top:30px;border-top:1px solid #c9c9c9;">
+            <div class="col-xs-12 formularioDiv" id="formServicios" style="display:none;margin-top:20px;">
                 <div class="col-xs-12 tal" style="">
-                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Favoritos:</h1>
-                    <select name="seleccionTransferencia" style="width:100%;">
-                        <option value="">Selecciona un favorito..</option>
+                    <select name="seleccionTransferencia" class="selectContacto" style="width:100%;">
+                        <option value="">Favoritos</option>
                         <option>Favorito no 2</option>
                         <option>Favorito no 3</option>
                     </select>
                 </div>
                 <div class="col-xs-12 tal" style="margin-top:10px;">
-                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Cuenta a debitar:</h1>
-                    <select name="seleccionTransferencia" style="width:100%;">
-                        <option value="">Selecciona una cuenta o tarjeta</option>
+                    <select name="seleccionTransferencia" class="selectContacto" style="width:100%;">
+                        <option value="">Cuenta a debitar</option>
                         <option>1234 **** **** **56</option>
                         <option>7847 **** **** **98</option>
                         <option>3489 **** **** **43</option>
@@ -98,32 +90,28 @@
                     </select>
                 </div>
                 <div class="col-xs-12 tal" style="margin-top:10px;">
-                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Categoría:</h1>
-                    <select name="seleccionTransferencia" style="width:100%;">
-                        <option value="">Agua</option>
+                    <select name="seleccionTransferencia" class="selectContacto" style="width:100%;">
+                        <option value="">Categoria</option>
+                        <option>Agua</option>
                         <option>Electricidad</option>
                         <option>Teléfono</option>
                     </select>
                 </div>
                 <div class="col-xs-12 tal" style="margin-top:10px;">
-                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Servicio:</h1>
-                    <select name="seleccionTransferencia" style="width:100%;">
-                        <option value="">Selecciona un servicio</option>
+                    <select name="seleccionTransferencia" class="selectContacto" style="width:100%;">
+                        <option value="">Servicio</option>
                         <option>...</option>
                         <option>....</option>
                     </select>
                 </div>
                 <div class="col-xs-12 tal" style="margin-top:10px;">
-                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Cuenta destino:</h1>
-                    <input type="text" placeholder="" class="inputContacto" style="color: #afafaf;padding:5px 15px;"/>
+                    <input type="text" value="Cuenta destino" class="inputContacto2"/>
                 </div>
-                <div class="col-xs-12 tal" style="margin-top:10px;">
-                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Descripción:</h1>
-                    <input type="text" placeholder="" class="inputContacto" style="color: #afafaf;padding:5px 15px;"/>
+                <div class="col-xs-12 tal" style="margin-top:20px;">
+                    <input type="text" value="Descripción" class="inputContacto2"/>
                 </div>
-                <div class="col-xs-12 tal" style="margin-top:10px;">
-                    <h1 class="fecha" style="color:#006838;font-size:17px !important;">Monto a pagar:</h1>
-                    <input type="number" placeholder="" class="inputContacto" style="color: #afafaf;padding:5px 15px;"/>
+                <div class="col-xs-12 tal" style="margin-top:20px;">
+                    <input type="text" value="Monto a pagar" class="inputContacto2"/>
                 </div>
                 <div class="col-xs-12 tac" style="margin-top:20px;">
                     <input class="botones" type="button" id="transferirBtn" onclick="transferir();" value="REALIZAR PAGO">

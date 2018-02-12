@@ -2,10 +2,10 @@
   "ProjectName": "APP_BANCARIA_DEV",
   "ProjectGuid": "986974ff-f301-475f-96f8-b2f0d5eae010",
   "projectVersion": 1,
-  "AppIdentifier": "com.app.stgeorgesbank",
-  "DisplayName": "APP_BANCARIA_DEV",
+  "AppIdentifier": "com.app4.stgeorgesbank4",
+  "DisplayName": "APP_BANCARIA4_DEV4",
   "Author": "",
-  "Description": "APP_BANCARIA_DEV",
+  "Description": "APP_BANCARIA4_DEV4",
   "BundleVersion": "1.0",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [

@@ -12,7 +12,7 @@ app.localization.registerView('transferenciasView');
 function propia(){
     $(".tiempos").removeClass("active");
     $("#btnPropia").addClass("active");
-    $(".formulario").hide();
+    $(".formularioDiv").hide();
     $("#formPropia").show();
     $('#formPropia').animateCss('pulse');
 }
@@ -20,7 +20,7 @@ function propia(){
 function terceros(){
     $(".tiempos").removeClass("active");
     $("#btnTercero").addClass("active");
-    $(".formulario").hide();
+    $(".formularioDiv").hide();
     $("#formTercero").show();
     $('#formTercero').animateCss('pulse');
 }
@@ -28,7 +28,7 @@ function terceros(){
 function ach(){
     $(".tiempos").removeClass("active");
     $("#btnAch").addClass("active");
-    $(".formulario").hide();
+    $(".formularioDiv").hide();
     $("#formAch").show();
     $('#formAch').animateCss('pulse');
 }

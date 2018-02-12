@@ -12,7 +12,7 @@ app.localization.registerView('pagosView');
 function prestamo(){
     $(".tiempos").removeClass("active");
     $("#btnPrestamo").addClass("active");
-    $(".formulario").hide();
+    $(".formularioDiv").hide();
     $("#formPrestamoCredito").show();
     $('#formPrestamoCredito').animateCss('pulse');
 }
@@ -20,7 +20,7 @@ function prestamo(){
 function credito(){
     $(".tiempos").removeClass("active");
     $("#btnCredito").addClass("active");
-    $(".formulario").hide();
+    $(".formularioDiv").hide();
     $("#formPrestamoCredito").show();
     $('#formPrestamoCredito').animateCss('pulse');
 }
@@ -28,7 +28,7 @@ function credito(){
 function servicios(){
     $(".tiempos").removeClass("active");
     $("#btnServicios").addClass("active");
-    $(".formulario").hide();
+    $(".formularioDiv").hide();
     $("#formServicios").show();
     $('#formServicios').animateCss('pulse');
 }

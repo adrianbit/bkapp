@@ -89,7 +89,7 @@ body{
 	height: 250px;
 	/**background-color: #00693E;*/
 	position: absolute; 
-	bottom:-5px;
+	bottom:30px;
     padding-top:20px;
     font-display: center;
 }
@@ -609,21 +609,23 @@ div{
 
 .nombreSeleccion{
 	/*background-color: #006838;*/
-    padding: 5px 15px;
+    padding: 0px 15px;
     width: fit-content;
     border-radius: 5px;
-    color: white !important;
-    font-size: 1.4em !important;
+    color: #61bf1a !important;
+    font-size: 1.6em !important;
     font-weight: bold !important;
     margin-top:10px;
     margin-bottom:15px;
 }
 
 .nombreSeleccionDiv{
-	background-color: #006838 !important;
+	background-color:white !important;
     text-transform: uppercase;
-    border:1px solid #b1b1b1;
-    padding:10px 0px;
+    border-bottom: 1px solid #505050;
+    padding: 0px 0px;
+    /* background-color: #61bf1a; */
+    text-shadow: 1px 1px 1px #b0b0b0;
 }
 
 .principal img{
@@ -699,8 +701,9 @@ div{
 	margin: 5% 0%;
 }
 
+/**
 #usuario::-webkit-input-placeholder {
-  color: white;
+  color: #333;
 }
 #usuario::-moz-placeholder {
   color: white;
@@ -710,7 +713,7 @@ div{
 }
 #usuario:-moz-placeholder {
   color: white;
-}
+}*/
 
 /*menu hamburguesa*/
 .hamburguesaTop{
@@ -886,9 +889,9 @@ fieldset label{
 	border-radius: 20px ;
     border: 2px solid #006338;
     border-radius: 10px !important;
-    background-color: white;
+    background-color: #006338;
     font-weight: 600;
-    color: #006338;
+    color: white;
     margin: 0% 5%;
 }
 
@@ -1374,6 +1377,38 @@ border-top: rgba(0,0,0,0.1 ) solid;
     border-bottom: 1px solid #006838 !important;
 }
 
+.inputContacto2{
+    width: 100% !important;
+    text-align: -webkit-left !important;
+    border: 1px solid #777;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #333 !important;
+    padding: 10px 15px !important;
+}
+
+.selectContacto{
+    width:100% !important;
+    margin-bottom:10px !important;
+    height:auto !important;
+    font-size:1.3em !important;
+    border: 2px solid #bfbfbf !important;
+    border-radius: 10px !important;
+    padding: 8px 15px !important;
+    color: #333 !important;
+    background-color: white !important;
+}
+
+.selectContacto option {
+    background: white;
+    color: #333;
+}
+
+.selectContacto option:not(:checked) { 
+    background: white;
+    color: #333;
+}
+
 .tarjetaDiv{
     margin-top:10px;
 }
@@ -1388,11 +1423,15 @@ border-top: rgba(0,0,0,0.1 ) solid;
 }
 
 .nombreSeleccionDiv{
-    border:1px solid #b1b1b1;
-    padding:10px 0px;
-    background-color:#f1f1f1;
+    
 }
 
 .rotateImg{
     transform: rotate(180deg);
+}
+
+.linesRow{
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #bbb;
 }
